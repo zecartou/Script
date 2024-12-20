@@ -1,0 +1,145 @@
+local UI = {}
+local Player = game.Players.LocalPlayer
+local NotificationGUI = script.NotificationSystem.NotificationGUI:Clone()
+NotificationGUI.Parent = Player.PlayerGui
+
+function UI:NewWindows(Name)
+	local Windows = {}
+	local WindowsUI = script.Element.Main.WindowsUI:Clone()
+	local WindowsTabsCounter = 0
+	WindowsUI.Parent = Player.PlayerGui
+	WindowsUI.Name = Name
+	WindowsUI.Main.UITopName.Text = Name
+	print("Windows created: " .. Name)
+
+	function Windows:NewTab(Name)
+		if WindowsTabsCounter == 5 then
+			warn("Cant Create Tab " .. Name .. " Reason: Max Tab Reached ! (MaxTab = 5)")
+			return Windows
+		end
+		if Name == "Tab" then
+			error("The script cant continue due to a error. Change the name of the tab named Tab and try again.")
+			return Windows
+		end
+		WindowsTabsCounter = WindowsTabsCounter + 1
+		local TabFunctionCounter = 0
+		local Tab = {}
+		local TabUI = script.Element.Main.Tab:Clone()
+		local FrameUI = script.Element.Main.Frame:Clone()
+		TabUI.TabNumber.Value = WindowsTabsCounter
+		TabUI.Parent = WindowsUI.Main.Content.Tab.TabFrame
+		TabUI.Name = Name
+		TabUI.Button.Text = Name
+		FrameUI.Parent = WindowsUI.Main.Content
+		FrameUI.Name = Name
+		print("Tab created: " .. Name)
+
+		function Tab:NewButton(Name, OnClick)
+			if TabFunctionCounter == 8 then
+				warn("Cant Create Function " .. Name .. " Reason: Max Function Reached ! (MaxFunction = 8)")
+				return Tab
+			end
+			TabFunctionCounter = TabFunctionCounter + 1
+			local Button = {}
+			local ButtonUI = script.Element.Function.Button:Clone()
+			ButtonUI.Parent = WindowsUI.Main.Content:WaitForChild(TabUI.Name)
+			ButtonUI.Name = Name
+			ButtonUI.Text.Text = Name
+			print("Button created: " .. Name)
+			ButtonUI.Button.MouseButton1Click:Connect(function()
+				if OnClick then
+					OnClick()
+				end
+			end)
+			return Button
+		end
+
+		function Tab:NewTextBox(Name, PlaceHolder, EnterPressed)
+			if TabFunctionCounter == 8 then
+				warn("Cant Create Function " .. Name .. " Reason: Max Function Reached ! (MaxFunction = 8)")
+				return Tab
+			end
+			TabFunctionCounter = TabFunctionCounter + 1
+			local TextBox = {}
+			local TextBoxUI = script.Element.Function.TextBox:Clone()
+			TextBoxUI.Parent = WindowsUI.Main.Content:WaitForChild(TabUI.Name)
+			TextBoxUI.Name = Name
+			TextBoxUI.Text.Text = Name
+			TextBoxUI.Box.PlaceholderText = PlaceHolder
+			print("TextBox created: " .. Name)
+			TextBoxUI.Box.FocusLost:Connect(function(enterPressed)
+				if enterPressed then
+					if EnterPressed then
+						EnterPressed(TextBoxUI.Box.Text)
+					end
+				end
+			end)
+			return TextBox
+		end
+
+		function Tab:NewToggle(Name, Changed, Value)
+			if TabFunctionCounter == 8 then
+				warn("Cant Create Function " .. Name .. " Reason: Max Function Reached ! (MaxFunction = 8)")
+				return Tab
+			end
+			TabFunctionCounter = TabFunctionCounter + 1
+			local Toggle = {}
+			local ToggleUI = script.Element.Function.Toggle:Clone()
+			ToggleUI.Parent = WindowsUI.Main.Content:WaitForChild(TabUI.Name)
+			ToggleUI.Name = Name
+			ToggleUI.Text.Text = Name
+			print("Toggle created: " .. Name)
+			ToggleUI.Toggle.MouseButton1Click:Connect(function()
+				Value = not Value
+				if Changed then
+					Changed(Value)
+				end
+			end)
+			return Toggle
+		end
+		function Tab:NewSlider(Name, Default, Max, Changed)
+			if TabFunctionCounter == 8 then
+				warn("Cant Create Function " .. Name .. " Reason: Max Function Reached ! (MaxFunction = 8)")
+				return Tab
+			end
+			TabFunctionCounter = TabFunctionCounter + 1
+			local Slider = {}
+			local SliderUI = script.Element.Function.Slider:Clone()
+			SliderUI.Parent = WindowsUI.Main.Content:WaitForChild(TabUI.Name)
+			SliderUI.Name = Name
+			SliderUI.Text.Text = Name
+			print("Toggle created: " .. Name)
+			SliderUI.Value.Changed:Connect(function(Value)
+				Value = not Value
+				if Changed then
+					Changed(Value)
+				end
+			end)
+			return Slider
+		end
+
+		return Tab
+	end
+
+	return Windows
+end
+
+function UI:Notify(Text)
+	local NotificationUI = script.NotificationSystem.Notification:Clone()
+	NotificationUI.Frame.Text.Text = Text
+	NotificationUI.Parent = Player.PlayerGui.NotificationGUI.NotificationFrame
+	game:GetService("TweenService"):Create(NotificationUI.Frame, TweenInfo.new(0.1), {Position = UDim2.fromScale(0.025, 0.093)}):Play()
+	wait(0.3)
+	game:GetService("TweenService"):Create(NotificationUI.Frame, TweenInfo.new(0.25), {Position = UDim2.fromScale(0, 0)}):Play()
+	game:GetService("TweenService"):Create(NotificationUI.Frame, TweenInfo.new(0.25), {Size = UDim2.fromScale(1, 1)}):Play()
+	NotificationUI.Frame.Clear.MouseButton1Click:Connect(function ()
+		game:GetService("TweenService"):Create(NotificationUI.Frame, TweenInfo.new(0.25), {Position = UDim2.fromScale(0.05, 0.093)}):Play()
+		game:GetService("TweenService"):Create(NotificationUI.Frame, TweenInfo.new(0.25), {Size = UDim2.fromScale(0.95, 0.8)}):Play()
+		wait(0.30)
+		game:GetService("TweenService"):Create(NotificationUI.Frame, TweenInfo.new(0.1), {Position = UDim2.fromScale(1.05, 0.093)}):Play()
+		wait(0.25)
+		NotificationUI:Destroy()
+	end)
+end
+
+return UI
