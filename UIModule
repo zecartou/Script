@@ -88,7 +88,7 @@ function UI:NewWindows(Name)
 			ToggleUI.Parent = WindowsUI.Main.Content:WaitForChild(TabUI.Name)
 			ToggleUI.Name = Name
 			ToggleUI.Text.Text = Name
-			print("Toggle created: " .. Name)
+			print("Slider created: " .. Name)
 			ToggleUI.Toggle.MouseButton1Click:Connect(function()
 				Value = not Value
 				if Changed then
