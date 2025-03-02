@@ -1,5 +1,5 @@
 local Library = loadstring(game:HttpGet("https://pastebin.com/raw/xh3HRfBw"))()
-local Window = Library:CreateWindow("zec Gui", Vector2.new(492, 598), Enum.KeyCode.RightControl)
+local Window = Library:CreateWindow("bloxyfruiter09 Gui", Vector2.new(492, 598), Enum.KeyCode.RightControl)
 
 local GeneralTab = Window:CreateTab("General") 
 local ScriptHubTab = Window:CreateTab("Script Hub") 
@@ -7,6 +7,7 @@ local ScriptHubTab = Window:CreateTab("Script Hub")
 local GeneralSection = GeneralTab:CreateSector("Basic Script", "Left")
 local SomeScriptSection = ScriptHubTab:CreateSector("Some Script", "Left")
 local FlingThingAndPeopleSection = ScriptHubTab:CreateSector("Fling Thing And People", "Left")
+local LuckyBlockBattlegroundSection = ScriptHubTab:CreateSector("Lucky Block Battleground", "Left")
 
 GeneralSection:AddButton("Fly Gui", function()
     loadstring(game:HttpGet("https://pastebin.com/raw/TcQwtjNs"))()
@@ -28,12 +29,46 @@ SomeScriptSection:AddButton("Vectuel", function()
     loadstring(game:HttpGet("https://pastebin.com/raw/7n2v6T8n", true))()
 end)
 
+SomeScriptSection:AddButton("Dex", function()
+    loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/JepDeveloper/Dex-Explorer-V4/refs/heads/main/EEE.lua"))()
+end)
+
+LuckyBlockBattlegroundSection:AddButton("Get Lucky Block", function()
+    game.ReplicatedStorage.SpawnLuckyBlock:FireServer()
+end)
+
+LuckyBlockBattlegroundSection:AddButton("Get Super Block", function()
+    game.ReplicatedStorage.SpawnSuperBlock:FireServer()
+end)
+
+LuckyBlockBattlegroundSection:AddButton("Get Diamond Block", function()
+    game.ReplicatedStorage.SpawnDiamondBlock:FireServer()
+end)
+
+LuckyBlockBattlegroundSection:AddButton("Get Rainbow Block", function()
+    game.ReplicatedStorage.SpawnRainbowBlock:FireServer()
+end)
+
+LuckyBlockBattlegroundSection:AddButton("Get Galaxy Block", function()
+    game.ReplicatedStorage.SpawnGalaxyBlock:FireServer()
+end)
+
+SomeScriptSection:AddButton("Anti-Afk", function()
+    game:GetService("Players").LocalPlayer.Idled:Connect(function()
+        game:GetService("VirtualUser"):CaptureController()
+        game:GetService("VirtualUser"):ClickButton2(Vector2.new())
+    end)
+end)
+
 SomeScriptSection:AddButton("Clear Error (Macking a toggle)", function()
     game:GetService("GuiService"):ClearError()
 end)
 
+FlingThingAndPeopleSection:AddButton("Elysium Premium", function()
+    loadstring(game:HttpGet("https://rawscripts.net/raw/Fling-Things-and-People-Blitz-FTAP-Free-Premium-UPDATED-29690"))()
+end)
+
 FlingThingAndPeopleSection:AddButton("Anti-Grab", function()
---[[ Settings ]]
 local DefaultReachLimit = 33
 local IncreasedReachDistance = 100
 local PowerTable = {
@@ -42,7 +77,6 @@ local PowerTable = {
    ["Players"] = 1600,
 }
 
---[[ Variables ]]
 local PS = game:GetService("Players")
 local Player = PS.LocalPlayer
 local Character = Player.Character or Player.CharacterAdded:Wait()
@@ -51,17 +85,14 @@ local CE = RS:WaitForChild("CharacterEvents")
 local BeingHeld = Player:WaitForChild("IsHeld")
 local PlayerScripts = Player:WaitForChild("PlayerScripts")
 
---[[ Remotes ]]
 local StruggleEvent = CE:WaitForChild("Struggle")
 
---[[ Anti-Explosion ]]
 workspace.DescendantAdded:Connect(function(v)
    if v:IsA("Explosion") then
        v.BlastPressure = 0
    end
 end)
 
---[[ Anti-grab ]]
 local RS = game:GetService("RunService")
 BeingHeld.Changed:Connect(function(C)
    if C == true then
@@ -90,7 +121,6 @@ function DoubleCounter(Passed)
 end
 
 function Reconnect()
-   --[[ Local variables ]]
    local Character = Player.Character or Player.CharacterAdded:Wait()
    local Humanoid = Character:FindFirstChildWhichIsA("Humanoid") or Character:WaitForChild("Humanoid")
    local HumanoidRootPart = Character:WaitForChild("HumanoidRootPart")
@@ -135,7 +165,6 @@ function Reconnect()
 
            if table.find(Constants, "make") and debug.getinfo(Func).name == "grab" then
                for a,b in pairs (Constants) do
-                   --[[ Makes it so even when you die you can still fling others ]]
                    if b == "Health" then
                        setconstant(Func, a, "JumpPower")
                        DoubleCounter("Add")
@@ -155,7 +184,6 @@ end)
 Reconnect()
 
 function ChangeThrow(Number)
-   --[[ Variables ]]
    Character = Player.Character or Player.CharacterAdded:Wait()
    local GS = Character:WaitForChild("GrabbingScript")
 
