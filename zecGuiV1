@@ -8,6 +8,7 @@ local GeneralSection = GeneralTab:CreateSector("Basic Script", "Left")
 local SomeScriptSection = ScriptHubTab:CreateSector("Some Script", "Left")
 local FlingThingAndPeopleSection = ScriptHubTab:CreateSector("Fling Thing And People", "Left")
 local LuckyBlockBattlegroundSection = ScriptHubTab:CreateSector("Lucky Block Battleground", "Left")
+local TheStrongestBattlegroundSection = ScriptHubTab:CreateSector("The Strongest Battleground", "Left")
 
 GeneralSection:AddButton("Fly Gui", function()
     loadstring(game:HttpGet("https://pastebin.com/raw/TcQwtjNs"))()
@@ -51,6 +52,10 @@ end)
 
 LuckyBlockBattlegroundSection:AddButton("Get Galaxy Block", function()
     game.ReplicatedStorage.SpawnGalaxyBlock:FireServer()
+end)
+
+TheStrongestBattlegroundSection:AddButton("TrashCan Man Moveset", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/yes1nt/yes/refs/heads/main/Trashcan%20Man", true))()
 end)
 
 SomeScriptSection:AddButton("Anti-Afk", function()
