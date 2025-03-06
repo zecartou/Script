@@ -1,4 +1,4 @@
-local NotificationV3
+local NotificationV3 = {}
 
 function NotificationV3:Notify(Player, Data)
 	if not (Player:IsA("Player") and typeof(Data) == "table") then
