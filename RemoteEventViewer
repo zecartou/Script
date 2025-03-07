@@ -1,2 +1,457 @@
---[[This script was obfuscated with zecObfuscatorV2]]
-local chars='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789[]{}()=;:,';local function fromObfuscatedBytes(encoded)local script={};for i=1,#encoded,2 do local char1=encoded:sub(i,i);local char2=encoded:sub(i+1,i+1);local byte=(chars:find(char1)-1)+((chars:find(char2)-1)*#chars);table.insert(script,string.char(byte));end;return string.reverse(table.concat(script));end;loadstring(fromObfuscatedBytes('pAoAgBrBdBqBeBdBqBKAKApAcBmBdBKApAoAxBZBkBIB6ApA1BJAJAKAxAgA9AgAxBbBmBdBqBZBoBrBmBZBqBMBcBmBtBnBqBfBjBbBZB(AJAJAJAKAzBJAJAKAsApA1AyAuAwAoAvBdBmBuAnBeBmBBBmBdBdBvBMBJAJAKAsAmBsBaBuAdBrBnBkB)AuAsBtBoBmBBBhBtBfBJAJAKAoAdBsBZBdBqB)A6ApAiAdBbBhBuBqBdBLBmBdBdBvBMBiAoAdBbBhBuBqBdBLBsBdB,A6AdBlBZBfBJAKApAoAgAmBnBhBsBbBmBtBeBoAsBbBdBmBmBnB)A6AdBuBZBdBEBdBrBtBnBFBuAmBsBaBuAdBrBnBkB)AuAsBtBoBmBBBhBtBfBKAKApAcBmBdBKApAoAxBZBkBIB6ApA1BJAJAKAwAgA9AgAxBbBmBdBqBZBoBrBmBZBqBMBcBmBtBnBqBfBjBbBZB(AJAJAJAKAzBJAJAKAsApA1AyAuAwAoAvBdBmBuAnBeBmBBBmBdBdBvBMBJAJAKAsAmBsBaBuAdBrBnBkB)AuAsBtBoBmBBBhBtBfBJAJAKAoAdBsBZBdBqB)A6ApAiAdBbBhBuBqBdBLBmBdBdBvBMBiAoAdBbBhBuBqBdBLBsBdB,A6AdBlBZBfBJAKApAoAgAmBnBhBsBbBmBtBeBoAsBbBdBmBmBnB)A6AqBdBsBmB;AdBrBtBnBFBuAmBsBaBuAdBrBnBkB)AuAsBtBoBmBBBhBtBfBKAKApAgBrBdBqBeBdBqBoAsBbBdBmBmBnB)A6AjBbBhBkB)AxAmBnBsBsBtB(AdBrBtBnBFBuAgBrBdBqBeBdBKBKAKAcBmBdBKAcBmBdBJAKAcBmBdBJAJAKApAcBmBdBJAJAJAKApAdBmBnBkBbBoAsBdBrBdBqBIBdBqBhB:AdBrBtBJAJAJAJAKApAoAgAmBnBhBsBbBmBtBeBoAsBbBdBmBmBnB)A6AjBbBhBkB)AxAmBnBsBsBtB(AdBrBtBnBFBuAdBqBhB:AuAdBmBnBkBbBJAJAJAKApAwAzAgAsAwAgAsAwAgAsAxAoAvBdBmBuAyAlBhB=ANBgA9AgAdByBhBLBuAdBmBnBkBbBJAJAJAKAdBtBqBsBgA9AgAdBkBaBhBrBhBOBuAdBmBnBkBbBJAJAJAKAsBrBhBEBgA9AgAsBmBdBqBZBIBuAdBmBnBkBbBJAJAJAKAiA1AxA0AwA5A2AzA3A1A2A3A3A4A4AvAvA6AcBhBsBdBrBrBZBwBaBqBiAgA9AgAdBfBZBlBBBuAkBdBaBZBEBdBfBZBlBBBuAdBmBnBkBbBJAJAJAKAdBlBZBGBuAuBgA9AgAsBwBdBMBuAdBlBZBGBsBlBKBuAdBmBnBkBbBJAJAJAKAdBlBZBGBuAuBgA9AgAdBlBZBGBuAdBmBnBkBbBJAJAJAKAuBgA9AgAdBtBkBZBOBuAsBmBdBuB;AdBsBnBlBdBKBuAdBmBnBkBbBJAJAJAKApAoAdBmBnBkB)A6AdBlBZBqB:AuAsBoBhBqBbBrBgA9AgAdBmBnBkBbBgAkBZBbBnBkBJAJAJAKAmBdBgBsBgApAiAmBnBhBsBbBmBtB:AdBkBaBZBcBmBhB(AiAoA}ArBBB6AuBgAeBhBdBrBkBdBJAJAKApAcBmBdBJAJAJAKApAdBmBnBkBbBoAsBdBrBdBqBIBdBqBhB:AdBrBtBJAJAJAJAKApAoAgAmBnBhBsBbBmBtBeBoAsBbBdBmBmBnB)A6AjBbBhBkB)AxAmBnBsBsBtB(AdBrBtBnBFBuAdBqBhB:AuAdBmBnBkBbBJAJAJAKApAwAzAgAsAwAgAsAwAgAsAxAoAvBdBmBuAyAlBhB=ANBgA9AgAdByBhBLBuAdBmBnBkBbBJAJAJAKAdBtBqBsBgA9AgAdBkBaBhBrBhBOBuAdBmBnBkBbBJAJAJAKAsBrBhBEBgA9AgAsBmBdBqBZBIBuAdBmBnBkBbBJAJAJAKAiA0AzAwAzAyA2A4A3A4A5A2A1A3AwAxAvAvA6AcBhBsBdBrBrBZBwBaBqBiAgA9AgAdBfBZBlBBBuAkBdBaBZBEBdBfBZBlBBBuAdBmBnBkBbBJAJAJAKAdBlBZBGBuAuBgA9AgAsBwBdBMBuAdBlBZBGBsBlBKBuAdBmBnBkBbBJAJAJAKAdBlBZBGBuAuBgA9AgAdBlBZBGBuAdBmBnBkBbBJAJAJAKAuBgA9AgAdBtBkBZBOBuAsBmBdBuB;AdBsBnBlBdBKBuAdBmBnBkBbBJAJAJAKApAoAdBmBnBkB)A6AdBlBZBqB:AuAsBoBhBqBbBrBgA9AgAdBmBnBkBbBgAkBZBbBnBkBJAJAJAKAmBdBgBsBgApAiAmBnBhBsBbBmBtB:AdBsBnBlBdBKBiAoA}ArBBB6AuBgAeBhBdBrBkBdBJAJAKApAcBmBdBJAJAJAKApAdBmBnBkBbBoAsBdBrBdBqBIBdBqBhB:AdBrBtBJAJAJAJAKApAoAgAmBnBhBsBbBmBtBeBoAsBbBdBmBmBnB)A6AjBbBhBkB)AxAmBnBsBsBtB(AdBrBtBnBFBuAdBqBhB:AuAdBmBnBkBbBJAJAJAKApAwAzAgAsAwAgAsAwAgAsAxAoAvBdBmBuAyAlBhB=ANBgA9AgAdByBhBLBuAdBmBnBkBbBJAJAJAKAdBtBqBsBgA9AgAdBkBaBhBrBhBOBuAdBmBnBkBbBJAJAJAKAsBrBhBEBgA9AgAsBmBdBqBZBIBuAdBmBnBkBbBJAJAJAKAiAyA2A3A3A5AxA5A3AxA5A3A1A3AyAxAvAvA6AcBhBsBdBrBrBZBwBaBqBiAgA9AgAdBfBZBlBBBuAkBdBaBZBEBdBfBZBlBBBuAdBmBnBkBbBJAJAJAKAdBlBZBGBuAuBgA9AgAsBwBdBMBuAdBlBZBGBsBlBKBuAdBmBnBkBbBJAJAJAKAdBlBZBGBuAuBgA9AgAdBlBZBGBuAdBmBnBkBbBJAJAJAKAuBgA9AgAdBtBkBZBOBuAsBmBdBuB;AdBsBnBlBdBKBuAdBmBnBkBbBJAJAJAKApAoAdBmBnBkB)A6AdBlBZBqB:AuAsBoBhBqBbBrBgA9AgAdBmBnBkBbBgAkBZBbBnBkBJAJAJAKAmBdBgBsBgApAiAsBmBdBuB;AdBsBnBlBdBKBdBkBaBZBhBkBdBqBmBNBiAoA}ArBBB6AuBgAeBhBdBrBkBdBJAJAKApAcBmBdBJAJAJAKApAdBmBnBkBbBoAsBdBrBdBqBIBdBqBhB:AdBrBtBJAJAJAJAKApAoAgAmBnBhBsBbBmBtBeBoAsBbBdBmBmBnB)A6AjBbBhBkB)AxAmBnBsBsBtB(AdBrBtBnBFBuAdBqBhB:AuAdBmBnBkBbBJAJAJAKApAwAzAgAsAwAgAsAwAgAsAxAoAvBdBmBuAyAlBhB=ANBgA9AgAdByBhBLBuAdBmBnBkBbBJAJAJAKAdBtBqBsBgA9AgAdBkBaBhBrBhBOBuAdBmBnBkBbBJAJAJAKAsBrBhBEBgA9AgAsBmBdBqBZBIBuAdBmBnBkBbBJAJAJAKAiA4AwA0AxA2AzA2A3A5A3A1A3AzA3AvAvA6AcBhBsBdBrBrBZBwBaBqBiAgA9AgAdBfBZBlBBBuAkBdBaBZBEBdBfBZBlBBBuAdBmBnBkBbBJAJAJAKAdBlBZBGBuAuBgA9AgAsBwBdBMBuAdBlBZBGBsBlBKBuAdBmBnBkBbBJAJAJAKAdBlBZBGBuAuBgA9AgAdBlBZBGBuAdBmBnBkBbBJAJAJAKAuBgA9AgAdBtBkBZBOBuAsBmBdBuB;AdBsBnBlBdBKBuAdBmBnBkBbBJAJAJAKApAoAdBmBnBkB)A6AdBlBZBqB:AuAsBoBhBqBbBrBgA9AgAdBmBnBkBbBgAkBZBbBnBkBJAJAJAKAmBdBgBsBgApAiAsBmBdBuB;AdBkBaBZBcBmBhB(AiAoA}ArBBB6AuBgAeBhBdBrBkBdBJAJAKApAcBmBdBJAJAJAKApAdBmBnBkBbBoAsBdBrBdBqBIBdBqBhB:AdBrBtBJAJAJAJAKApAoAgAmBnBhBsBbBmBtBeBoAsBbBdBmBmBnB)A6AjBbBhBkB)AxAmBnBsBsBtB(AdBrBtBnBFBuAdBqBhB:AuAdBmBnBkBbBJAJAJAKApAwAzAgAsAwAgAsAwAgAsAxAoAvBdBmBuAyAlBhB=ANBgA9AgAdByBhBLBuAdBmBnBkBbBJAJAJAKAdBtBqBsBgA9AgAdBkBaBhBrBhBOBuAdBmBnBkBbBJAJAJAKAsBrBhBEBgA9AgAsBmBdBqBZBIBuAdBmBnBkBbBJAJAJAKAiAxA1A2A0A1AxA2A1A3AyA3A3A5AyAxAvAvA6AcBhBsBdBrBrBZBwBaBqBiAgA9AgAdBfBZBlBBBuAkBdBaBZBEBdBfBZBlBBBuAdBmBnBkBbBJAJAJAKAdBlBZBGBuAuBgA9AgAsBwBdBMBuAdBlBZBGBsBlBKBuAdBmBnBkBbBJAJAJAKAdBlBZBGBuAuBgA9AgAdBlBZBGBuAdBmBnBkBbBJAJAJAKAuBgA9AgAdBtBkBZBOBuAsBmBdBuB;AdBsBnBlBdBKBuAdBmBnBkBbBJAJAJAKApAoAdBmBnBkB)A6AdBlBZBqB:AuAsBoBhBqBbBrBgA9AgAdBmBnBkBbBgAkBZBbBnBkBJAJAJAKAmBdBgBsBgApAiAsBmBdBuB;AdBsBnBlBdBKBiAoA}ArBBB6AuBgAeBhBJAJAKAnBcBgApAoArBsBmBZBcBmBdBbBrBdB=AsBdB,A6AdBlBZBfBgAmBhBgAuBgAsAXBgAqBnBeBJAKAcBmBdBJAKAcBmBdBJAJAKApAoAxBnBqBsBrBdB=A6AuBJAJAJAKAmBdBgBsBgApAiAdBlBZBqB:AiAoA}ArBBB6AuBgAeBhBJAJAKAnBcBgApAoAmBdBqBcBkBhBgB)AsBdB,A6AsBrBhBEBgAmBhBgAuBgAsAXBgAqBnBeBJAKApAoAgAgBrBdBqBeBdBqBgAmBnBhBsBbBmBtBeBgAkBZBbBnBkBKAKAcBmBdBKApAsBmBdBlBdBtBfBqBZBgAsAsBmBdBuBdBoAqBdBuBqBdBLBdBqBhBeBJAKAsBwBdBMBuAwBnB(AsBwBdBMBuAdBmBnBkBbBgA9AgAsBmBdBlBdBtBfBqBZBgAkBZBbBnBkBJAKAdBtBkBZBOBuAsBmBdBuB;AdBsBnBlBdBKBuAdBmBnBkBbBgA9AgAsBmBdBuBdBgAkBZBbBnBkBJAKApAdBmBnBkBbBoAgAsBdBrBdBqBIBdBqBhB:AdBrBtBgAmBnBhBsBbBmBtBeBgAkBZBbBnBkBKAKAcBmBdBKAcBmBdBJAKAcBmBdBJAJAKApAsBmBdBlBdBtBfBqBZBoAqBdBuBqBdBLBdBjBnBuBmBBB6AsBmBdBuBdBJAJAJAKAmBdBgBsBgApAiAmBnBhBsBbBmBtB:AdBsBnBlBdBKBiAoA}ArBBB6AsBmBdBuBdBgAeBhBdBrBkBdBJAJAKApAsBmBdBlBdBtBfBqBZBoAdBjBnBuBmBBB6AsBmBdBuBdBJAJAJAKAmBdBgBsBgApAiAmBnBhBsBbBmBtB:AdBkBaBZBcBmBhB(AiAoA}ArBBB6AsBmBdBuBdBgAeBhBdBrBkBdBJAJAKApAsBmBdBlBdBtBfBqBZBoAqBdBuBqBdBLBdBqBhB:A6AsBmBdBuBdBJAJAJAKAmBdBgBsBgApAiAsBmBdBuB;AdBsBnBlBdBKBdBkBaBZBhBkBdBqBmBNBiAoA}ArBBB6AsBmBdBuBdBgAeBhBdBrBkBdBJAJAKApAsBmBdBlBdBtBfBqBZBoAdBqBhB:A6AsBmBdBuBdBJAJAJAKAmBdBgBsBgApAiAsBmBdBuB;AdBkBaBZBcBmBhB(AiAoA}ArBBB6AsBmBdBuBdBgAeBhBdBrBkBdBJAJAKApAsBmBdBlBdBtBfBqBZBoAqBdBuBqBdBLBdBqBhB:A6AsBmBdBuBdBJAJAJAKAmBdBgBsBgApAiAsBmBdBuB;AdBsBnBlBdBKBiAoA}ArBBB6AsBmBdBuBdBgAeBhBJAJAKAmBdBgBsBgAkBhBmBgA9A2BgAsBmBdBuBdBgAeBhBJAKApAsBmBdBlBdBtBfBqBZBgAsAsBmBdBuBdBoAgAqBdBuBqBdBLBdBqBhBeBgAmBnBhBsBbBmBtBeBgAkBZBbBnBkBKAKApAcBmBdBKApAoAxBnBqBsBrBdB=A6A5AwAqBdBsBhBtBqBeBxBwBnBkBaBXBqBdBvBdBhBOBsBmBdBuB;AdBsBnBlBdBKBJAKApAxAuAwAoAsBhBZBvBJAKAcBmBdBJAKAcBmBdBJAJAKApAoAxBZBkBIB6ApA1BJAJAJAJAKAxAgA9AgAxBbBmBdBqBZBoBrBmBZBqBMBdBfBZBlBBBJAJAJAJAJAKAzBJAJAJAJAKAsApAxAuAwAoAvBdBmBuAnBeBmBBBmBdBdBvBMBJAJAJAJAKAsAuBJAJAJAJAKAoAdBsBZBdBqB)A6ApAiAdBbBhBuBqBdBLBmBdBdBvBMBiAoAdBbBhBuBqBdBLBsBdB,A6AdBlBZBfBJAJAJAKAmBdBgBsBgApAiAkBdBaBZBEBdBfBZBlBBBiAoA}ArBBB6AuBgAeBhBdBrBkBdBJAJAKApAoAxBZBkBIB6ApA1BJAJAJAJAKAxAgA9AgAxBbBmBdBqBZBoBrBmBZBqBMBsBwBdBMBJAJAJAJAJAKAzBJAJAJAJAKAsApAxAuAwAoAvBdBmBuAnBeBmBBBmBdBdBvBMBJAJAJAJAKAsAuBJAJAJAJAKAoAdBsBZBdBqB)A6ApAiAdBbBhBuBqBdBLBmBdBdBvBMBiAoAdBbBhBuBqBdBLBsBdB,A6AdBlBZBfBJAJAJAKAmBdBgBsBgApAiAkBdBaBZBEBsBwBdBMBiAoA}ArBBB6AuBgAeBhBdBrBkBdBJAJAKApAoAxBZBkBIB6ApA1BJAJAJAJAKAxAgA9AgAxBbBmBdBqBZBoBrBmBZBqBMBsBwBdBMBJAJAJAJAJAKAzBJAJAJAJAKAsApAxAuAwAoAvBdBmBuAnBeBmBBBmBdBdBvBMBJAJAJAJAKAsAuBJAJAJAJAKAoAdBsBZBdBqB)A6ApAiAdBbBhBuBqBdBLBmBdBdBvBMBiAoAdBbBhBuBqBdBLBsBdB,A6AdBlBZBfBJAJAJAKAmBdBgBsBgApAiAmBnBsBsBtB(AsBwBdBMBiAoA}ArBBB6AuBgAeBhBdBrBkBdBJAJAKApAoAxBZBkBIB6ApA1BJAJAJAJAKAxAgA9AgAxBbBmBdBqBZBoBrBmBZBqBMBcBmBtBnBqBfBjBbBZB(AJAJAJAJAJAKAzBJAJAJAJAKAsApAxAuAwAoAvBdBmBuAnBeBmBBBmBdBdBvBMBJAJAJAJAKAsAuBJAJAJAJAKAoAdBsBZBdBqB)A6ApAiAdBbBhBuBqBdBLBmBdBdBvBMBiAoAdBbBhBuBqBdBLBsBdB,A6AdBlBZBfBJAJAJAKAmBdBgBsBgApAiAdBlBZBqB:AiAoA}ArBBB6AuBgAeBhBJAJAKAnBcBgApAoArBsBmBZBcBmBdBbBrBdB=AsBdB,A6A5AwAqBdBsBhBtBqBeBxBwBnBkBaBXBqBdBvBdBhBOBsBmBdBuB;AdBsBnBlBdBKBgAmBhBgAuBgAsAXBgAqBnBeBJAKApAoAxBZBkBIB6ApA1BJAJAKApA3AyAyAuAwAgAsA5AyAyAuAwAoAdBkBZBbBLBlBnBqBeBuAyAlBhB=ANBgA9AgAdByBhBLBJAJAJAKAzBJAJAKAsApAxAuAwAoAvBdBmBuAnBeBmBBBmBdBdBvBMBJAJAKAsAyAXBdBlBZBqB:AJAJAKAoAdBsBZBdBqB)A6ApAiAdBbBhBuBqBdBLBmBdBdBvBMBiAoAdBbBhBuBqBdBLBsBdB,A6AdBlBZBfBJAKApA5AzAyAuAwAgAsA0AzAyAuAwAoAdBkBZBbBLBlBnBqBeBuAyAlBhB=ANBgA9AgAdByBhBLBuAyAXBdBlBZBqB:AJAKApAoAgAmBnBhBsBbBmBtBeBoAsBbBdBmBmBnB)A6AjBbBhBkB)AxAmBnBsBsBtB(AdBrBtBnBFBuAmBsBaBKAcBmBdBKAcBmBdBJAKApAoAxBZBkBIB6ApA1BJAJAJAKAwAgA9AgAxBbBmBdBqBZBoBrBmBZBqBMBdBfBZBlBBBJAJAJAJAKAzBJAJAJAKAsApAxAuAwAoAvBdBmBuAnBeBmBBBmBdBdBvBMBJAJAJAKAsAuBJAJAJAKAoAdBsBZBdBqB)A6ApAiAdBbBhBuBqBdBLBmBdBdBvBMBiAoAdBbBhBuBqBdBLBsBdB,A6AdBlBZBfBJAJAKAmBdBgBsBgApAiAkBdBaBZBEBdBfBZBlBBBiAoA}ArBBB6AuBgAeBhBdBrBkBdBJAKApAoAxBZBkBIB6ApA1BJAJAJAKAwAgA9AgAxBbBmBdBqBZBoBrBmBZBqBMBsBwBdBMBJAJAJAJAKAzBJAJAJAKAsApAxAuAwAoAvBdBmBuAnBeBmBBBmBdBdBvBMBJAJAJAKAsAuBJAJAJAKAoAdBsBZBdBqB)A6ApAiAdBbBhBuBqBdBLBmBdBdBvBMBiAoAdBbBhBuBqBdBLBsBdB,A6AdBlBZBfBJAJAKAmBdBgBsBgApAiAkBdBaBZBEBsBwBdBMBiAoA}ArBBB6AuBgAeBhBdBrBkBdBJAKApAoAxBZBkBIB6ApA1BJAJAJAKAwAgA9AgAxBbBmBdBqBZBoBrBmBZBqBMBsBwBdBMBJAJAJAJAKAzBJAJAJAKAsApAxAuAwAoAvBdBmBuAnBeBmBBBmBdBdBvBMBJAJAJAKAsAuBJAJAJAKAoAdBsBZBdBqB)A6ApAiAdBbBhBuBqBdBLBmBdBdBvBMBiAoAdBbBhBuBqBdBLBsBdB,A6AdBlBZBfBJAJAKAmBdBgBsBgApAiAmBnBsBsBtB(AsBwBdBMBiAoA}ArBBB6AuBgAeBhBdBrBkBdBJAKApAoAxBZBkBIB6ApA1BJAJAJAKAwAgA9AgAxBbBmBdBqBZBoBrBmBZBqBMBcBmBtBnBqBfBjBbBZB(AJAJAJAJAKAzBJAJAJAKAsApAxAuAwAoAvBdBmBuAnBeBmBBBmBdBdBvBMBJAJAJAKAsAuBJAJAJAKAoAdBsBZBdBqB)A6ApAiAdBbBhBuBqBdBLBmBdBdBvBMBiAoAdBbBhBuBqBdBLBsBdB,A6AdBlBZBfBJAJAKAmBdBgBsBgApAiAdBlBZBqB:AiAoA}ArBBB6AuBgAeBhBJAKAnBcBgApAoArBsBmBZBcBmBdBbBrBdB=AsBdB,A6AhBtBfBgAmBhBgAuBgAsAXBgAqBnBeBKApAoAxBZBkBIB6ApA1BJAKApA5AzAyAuAwAgAsA0AzAyAuAwAoAdBkBZBbBLBlBnBqBeBuAyAlBhB=ANBgA9AgAdByBhBLBJAJAKAzBJAKAsApA1AuAwAoAvBdBmBuAnBeBmBBBmBdBdBvBMBJAKAsAhBtBfBJAKAoAdBsBZBdBqB)A6ApAiAdBbBhBuBqBdBLBmBdBdBvBMBiAoAdBbBhBuBqBdBLBsBdB,A6AdBlBZBfBKAdBtBqBsBgA9AgAcBdBkBaBZBmB;AuA5AwAqBdBsBhBtBqBeBxBwBnBkBaBXBqBdBvBdBhBOBsBmBdBuB;AdBsBnBlBdBKBKAcBmBdBKAcBmBdBJAKApAoAxBZBkBIB6ApA1BJAJAJAKAwAgA9AgAxBbBmBdBqBZBoBrBmBZBqBMBdBfBZBlBBBJAJAJAJAKAzBJAJAJAKAsApAwAoAvBdBmBuAnBeBmBBBmBdBdBvBMBJAJAJAKAsAuBJAJAJAKAoAdBsBZBdBqB)A6ApAiAdBbBhBuBqBdBLBmBdBdBvBMBiAoAdBbBhBuBqBdBLBsBdB,A6AdBlBZBfBJAJAKAmBdBgBsBgApAiAkBdBaBZBEBdBfBZBlBBBiAoA}ArBBB6AuBgAeBhBdBrBkBdBJAKApAoAxBZBkBIB6ApA1BJAJAJAKAwAgA9AgAxBbBmBdBqBZBoBrBmBZBqBMBsBwBdBMBJAJAJAJAKAzBJAJAJAKAsApAwAoAvBdBmBuAnBeBmBBBmBdBdBvBMBJAJAJAKAsAuBJAJAJAKAoAdBsBZBdBqB)A6ApAiAdBbBhBuBqBdBLBmBdBdBvBMBiAoAdBbBhBuBqBdBLBsBdB,A6AdBlBZBfBJAJAKAmBdBgBsBgApAiAkBdBaBZBEBsBwBdBMBiAoA}ArBBB6AuBgAeBhBdBrBkBdBJAKApAoAxBZBkBIB6ApA1BJAJAJAKAwAgA9AgAxBbBmBdBqBZBoBrBmBZBqBMBsBwBdBMBJAJAJAJAKAzBJAJAJAKAsApAwAoAvBdBmBuAnBeBmBBBmBdBdBvBMBJAJAJAKAsAuBJAJAJAKAoAdBsBZBdBqB)A6ApAiAdBbBhBuBqBdBLBmBdBdBvBMBiAoAdBbBhBuBqBdBLBsBdB,A6AdBlBZBfBJAJAKAmBdBgBsBgApAiAmBnBsBsBtB(AsBwBdBMBiAoA}ArBBB6AuBgAeBhBdBrBkBdBJAKApAoAxBZBkBIB6ApA1BJAJAJAKAwAgA9AgAxBbBmBdBqBZBoBrBmBZBqBMBcBmBtBnBqBfBjBbBZB(AJAJAJAJAKAzBJAJAJAKAsApAwAoAvBdBmBuAnBeBmBBBmBdBdBvBMBJAJAJAKAsAuBJAJAJAKAoAdBsBZBdBqB)A6ApAiAdBbBhBuBqBdBLBmBdBdBvBMBiAoAdBbBhBuBqBdBLBsBdB,A6AdBlBZBfBJAJAKAmBdBgBsBgApAiAdBlBZBqB:AiAoA}ArBBB6AuBgAeBhBJAKAnBcBgApAoArBsBmBZBcBmBdBbBrBdB=AsBdB,A6AhBtBfBgAmBhBgAuBgAsAXBgAqBnBeBKApA3AyAyAuAwAgAsA5AyAyAuAwAoAdBkBZBbBLBlBnBqBeBuAyAlBhB=ANBgA9AgAdByBhBLBuAhBtBfBKAKApAcBmBdBKAcBmBdBJAKApAsBtBoBmBhBoAdBsBZBcBoBtBJAJAKAmBdBgBsBgAfBmBhBfBfBZBqBcBgAcBmBZBgAsBtBoBmBBBfBZBqBcBgA9A9AgAsBtBoBmBhBgAeBhBJAKApAsBtBoBmBhBoAmBnBhBsBbBmBtBeBoAsBbBdBmBmBnB)A6AcBdBfBmBZBgB)AsBtBoBmBBBuApAiAdBbBhBuBqBdBLBsBtBoBmBBBqBdBrBNBiAoAdBbBhBuBqBdBLBsBdB,A6AdBlBZBfBKAKApAcBmBdBKAcBmBdBJAKAsBtBoBmBhBgA9AgAsBtBoBmBBBfBZBqBcBJAJAKAmBdBgBsBgAgBbBtBnBMBuAdBoBxBMBsBtBoBmBBBqBdBrBNBuAlBtBmB;AgA9A9AgAdBoBxBMBsBtBoBmBBBqBdBrBNBuAsBtBoBmBhBgAqBnBgAsBmBdBlBdBuBnBFBdBrBtBnBFBuAdBoBxBMBsBtBoBmBBBqBdBrBNBuAlBtBmB;AgA9A9AgAdBoBxBMBsBtBoBmBBBqBdBrBNBuAsBtBoBmBhBgAeBhBJAKApAsBtBoBmBhBoAmBnBhBsBbBmBtBeBoAsBbBdBmBmBnB)A6AcBdBfBmBZBgB)AsBtBoBmBBBuAsBtBoBmBBBhBtBfBKAKApAcBmBdBKAcBmBdBJAKApAcBmBdBJAJAKAcBmBdBJAJAJAKAdBrBkBZBeBgA9AgAfBmBhBfBfBZBqBcBJAJAJAJAKAmBdBgBsBgAcBmB;AuAdBsBZBsBLBsBtBoBmBBBqBdBrBNBuAlBtBmB;AgA9A9AgAdBsBZBsBLBsBtBoBmBBBqBdBrBNBuAsBtBoBmBhBgAeBhBJAJAJAKApAoAmBnBhBsBbBmBtBeBoAsBbBdBmBmBnB)A6AcBdBfBmBZBgB)AuAsBtBoBmBhBJAJAKAKAmBnBhBsBhBrBnBIBuAhBtBfBgA9AgArBnBIBsBqBZBsBrBJAJAKAmBnBhBsBhBrBnBIBuAsBtBoBmBhBgA9AgAsBqBZBsBLBfBZBqBcBJAJAKAdBtBqBsBgA9AgAfBmBhBfBfBZBqBcBJAJAKAmBdBgBsBgAgBbBtBnBMBuAdBoBxBMBsBtBoBmBBBqBdBrBNBuAlBtBmB;AgA9A9AgAdBoBxBMBsBtBoBmBBBqBdBrBNBuAsBtBoBmBhBgAqBnBgAxAmBnBsBsBtB(AdBrBtBnBFBuAdBoBxBMBsBtBoBmBBBqBdBrBNBuAlBtBmB;AgA9A9AgAdBoBxBMBsBtBoBmBBBqBdBrBNBuAsBtBoBmBhBgAeBhBJAKApAsBtBoBmBhBoAmBnBhBsBbBmBtBeBoAsBbBdBmBmBnB)A6AmBZBfBdB(AsBtBoBmBBBuAsBtBoBmBBBhBtBfBKAKAcBmBdBKApARBuAZBsBkBdBcBgArAgAsBdBrBeBeBHBuARBuArBnBIBsBqBZBsBrBgAsAdBkBZBbBLBuARBuArBnBIBsBqBZBsBrBgAsAQBuAZBsBkBdBcBgArAgAsBdBrBeBeBHBuAQBuArBnBIBsBqBZBsBrBgAsAdBkBZBbBLBuAQBuArBnBIBsBqBZBsBrBoAvBdBmBuAyAlBhB=ANBgA9AgAmBnBhBsBhBrBnBIBuAhBtBfBJAKAsBqBZBsBLBfBZBqBcBgAtAgAmBnBhBsBhBrBnBIBuAsBtBoBmBhBgA9AgAZBsBkBdBcBgAkBZBbBnBkBJAKApAsBtBoBmBhBoAdBsBZBcBoBtBgAmBnBhBsBbBmBtBeBgAkBZBbBnBkBKAKArBnBIBsBqBZBsBrBgAkBZBbBnBkBKAsBqBZBsBLBfBZBqBcBgAkBZBbBnBkBKAsBtBoBmBBBfBZBqBcBgAkBZBbBnBkBKAfBmBhBfBfBZBqBcBgAkBZBbBnBkBKAKAoBnBMBgA9AgAsBtBoBmBBBhBtBfBgAkBZBbBnBkBKAyAXBdBlBZBqB:AgA9AgAhBtBfBgAkBZBbBnBkBKAKAqBdBcBqBHBsBtBnBxBZBEBuAqBdBcBqBHBsBqBnBLBuAlBtBmB;AgA9AgAqBdBcBqBHBsBqBnBLBuAsBtBnBxBZBEBsBrBhBEBBBNBKAqBdBsBmBdB)AuAsBmBdBlBmBfBhBkB}AkBZBsBmBnByBhBqBnBABuAlBtBmB;AgA9AgAsBmBdBlBmBfBhBkB}AkBZBsBmBnByBhBqBnBABuAsBtBnBxBZBEBsBrBhBEBBBNBKAsBrBhBEBgA9AgAsBmBdBqBZBIBuAsBtBnBxBZBEBsBrBhBEBBBNBKAKAwAgA9AgArBrBdBmBjBbBhBgBMBqBZB(AkBkBnBqBbBLBuAsBrBhBEBKApAwAgAsAwAwAwAwAwAxAgAsAwAgAsAwAoAvBdBmBuAyAlBhB=ANBgA9AgAdByBhBLBrBZBuBmBZB)AuAsBrBhBEBKApAwAgAsA4A2A3AuAwAgAsAwAgAsAxA5A3AuAwAoAvBdBmBuAyAlBhB=ANBgA9AgAdByBhBLBuAsBrBhBEBKApAwAgAsA3A4AxAuAwAgAsAwAgAsAyAwAuAwAoAvBdBmBuAyAlBhB=ANBgA9AgAmBnBhBsBhBrBnBIBuAsBrBhBEBKAwAgA9AgAkBdBwBhBIBdByBhBLBqBdBcBqBnB(AuAsBrBhBEBKApAwAgAsAwAgAsAwAoA(A,AKBlBnBqBeBuAzAqBnBkBnB)AgA9AgAzAqBnBkBnB)AqBdBcBqBnB(AuAsBrBhBEBKAwAwAwAuAxAgA9AgAxBbBmBdBqBZBoBrBmBZBqBMBcBmBtBnBqBfBjBbBZB(AuAsBrBhBEBKApA1A1AyAgAsA1A1AyAgAsA1A1AyAoA(A,AKBlBnBqBeBuAzAqBnBkBnB)AgA9AgAzAqBnBkBnB)AcBmBtBnBqBfBjBbBZB(AuAsBrBhBEBKAdBtBqBsBgA9AgAdBuBhBsBbB}AuAsBrBhBEBKAyAXBdBlBZBqB:AgA9AgAsBmBdBqBZBIBuAsBrBhBEBKAiAsBrBhBEBiAgA9AgAdBlBZBGBuAsBrBhBEBKAKAdBtBqBsBgA9AgAcBdBoBoBZBqBPBsBwBdBMBuAgBrBdBqBeBdBKBKAwAwAwAuA0AxAgA9AgAdByBhBLBsBwBdBMBuAgBrBdBqBeBdBKBKApAwAgAsAwAgAsAwAoA(A,AKBlBnBqBeBuAzAqBnBkBnB)AgA9AgAzAqBnBkBnB)AsBwBdBMBuAgBrBdBqBeBdBKBKAiAgBrBdBqBeBdBKBiAgA9AgAsBwBdBMBuAgBrBdBqBeBdBKBKArBmBZBLBdBbBqBtBnBLBuAsBmBnB:AuAlBtBmB;AgA9AgAsBmBnB:AuAgBrBdBqBeBdBKBKApAwAgAsAzA5AxAwA4AyA2AwAxAuAwAgAsAwAgAsA5A0AxA3A1A4AyA0AxAuAwAoAvBdBmBuAyAlBhB=ANBgA9AgAdByBhBLBuAgBrBdBqBeBdBKBKApAwAgAsAyA0A1AxA0AyAwA1A4AuAwAgAsAwAgAsAzAwA0AxAyA4A0AzA4AuAwAoAvBdBmBuAyAlBhB=ANBgA9AgAmBnBhBsBhBrBnBIBuAgBrBdBqBeBdBKBKApAzA4AxAgAsAzA4AxAgAsAzA4AxAoA(A,AKBlBnBqBeBuAzAqBnBkBnB)AgA9AgAzAqBnBkBnB)AqBdBcBqBnB(AuAgBrBdBqBeBdBKBKApA0AxAyAgAsA0AxAyAgAsA0AxAyAoA(A,AKBlBnBqBeBuAzAqBnBkBnB)AgA9AgAzAqBnBkBnB)AcBmBtBnBqBfBjBbBZB(AuAgBrBdBqBeBdBKBKAyAXBdBlBZBqB:AgA9AgAsBmBdBqBZBIBuAgBrBdBqBeBdBKBKAiAgBrBdBqBeBdBKBiAgA9AgAdBlBZBGBuAgBrBdBqBeBdBKBKAKAyAXBdBlBZBqB:AgA9AgAsBmBdBqBZBIBuAdBkBZBbBLBBBNBKAKA1AyAgA9AgAdByBhBLBsBwBdBMBmBhBFBuAsBmBhBZBqBsBrBmBnB)AdByBhBLBsBwBdBMBBBNBKA4AyAgA9AgAdByBhBLBsBwBdBMBwBZBFBuAsBmBhBZBqBsBrBmBnB)AdByBhBLBsBwBdBMBBBNBKAmBsBaBgA9AgAsBmBdBqBZBIBuAsBmBhBZBqBsBrBmBnB)AdByBhBLBsBwBdBMBBBNBKAKAdBtBqBsBgA9AgAcBdBoBoBZBqBPBsBwBdBMBuAmBsBaBKAwAwAwAuA0AxAgA9AgAdByBhBLBsBwBdBMBuAmBsBaBKApAwAgAsAwAgAsAwAoA(A,AKBlBnBqBeBuAzAqBnBkBnB)AgA9AgAzAqBnBkBnB)AsBwBdBMBuAmBsBaBKAiAFCMCKDiAgA9AgAsBwBdBMBuAmBsBaBKAcBmBnBlBZBqBZB,AuAsBmBnB:AuAlBtBmB;AgA9AgAsBmBnB:AuAmBsBaBKApAwAgAsAxAzA3A1A4AyA0AxAuAyAgAsAwAgAsAxA2A1A4AyA0AxAyAuAyAoAvBdBmBuAyAlBhB=ANBgA9AgAdByBhBLBuAmBsBaBKApAwAgAsA2AwAwAwAwAwAwA1AuAwAgAsAwAgAsAyA0A2A1A4AyA0A2A0AuAwAoAvBdBmBuAyAlBhB=ANBgA9AgAmBnBhBsBhBrBnBIBuAmBsBaBKAwAgA9AgAkBdBwBhBIBdByBhBLBqBdBcBqBnB(AuAmBsBaBKApAzA1AgAsAyA0AgAsA3AyAoA(A,AKBlBnBqBeBuAzAqBnBkBnB)AgA9AgAzAqBnBkBnB)AqBdBcBqBnB(AuAmBsBaBKAwAwAwAuAxAgA9AgAxBbBmBdBqBZBoBrBmBZBqBMBcBmBtBnBqBfBjBbBZB(AuAmBsBaBKApAwAgAsAwAgAsA1A1AyAoA(A,AKBlBnBqBeBuAzAqBnBkBnB)AgA9AgAzAqBnBkBnB)AcBmBtBnBqBfBjBbBZB(AuAmBsBaBKApA1AuAwAgAsA1AuAwAoAvBdBmBuAyAqBnBsBbBdBOBgA9AgAsBmBhBnBIBqBnBgBbBmB}AuAmBsBaBKAdBrBnBkB)AgA9AgAsBmBdBqBZBIBuAmBsBaBKAiAmBsBaBiAgA9AgAdBlBZBGBuAmBsBaBKAKApAwAgAsA4A5A2A2A2A2A2A2A0AuAwAgAsAwAgAsA1AyAxAzAwAuAwAoAvBdBmBuAyAlBhB=ANBgA9AgAdByBhBLBuAdBrBnBkB)AKApAwAgAsAxA4A2A2A2A2A2A2AyAuAwAgAsAwAgAsA2A2A4AyA0AxAyA4A5AuAwAoAvBdBmBuAyAlBhB=ANBgA9AgAmBnBhBsBhBrBnBIBuAdBrBnBkB)AKAwAgA9AgAkBdBwBhBIBdByBhBLBqBdBcBqBnB(AuAdBrBnBkB)AKApAzA1AgAsAyA0AgAsA3AyAoA(A,AKBlBnBqBeBuAzAqBnBkBnB)AgA9AgAzAqBnBkBnB)AqBdBcBqBnB(AuAdBrBnBkB)AKAwAwAwAuAxAgA9AgAxBbBmBdBqBZBoBrBmBZBqBMBcBmBtBnBqBfBjBbBZB(AuAdBrBnBkB)AKApA0AwAyAgAsA0AxAxAgAsAwAoA(A,AKBlBnBqBeBuAzAqBnBkBnB)AgA9AgAzAqBnBkBnB)AcBmBtBnBqBfBjBbBZB(AuAdBrBnBkB)AKApAwAgAsAxAoAvBdBmBuAyAqBnBsBbBdBOBgA9AgAsBmBhBnBIBqBnBgBbBmB}AuAdBrBnBkB)AKAoBnBMBgA9AgAsBmBdBqBZBIBuAdBrBnBkB)AKAiAdBrBnBkB)AiAgA9AgAdBlBZBGBuAdBrBnBkB)AKAKAsBeBdBEBuAsBmBdBlBmBfBhBkB}AQBsBwBdBMBuAlBtBmB;AgA9AgAsBmBdBlBmBfBhBkB}AQBsBwBdBMBuAdBkBsBhBMBwBnB(AKAdBtBqBsBgA9AgAcBdBoBoBZBqBPBsBwBdBMBuAdBkBsBhBMBwBnB(AKAwAwAwAuA0AxAgA9AgAdByBhBLBsBwBdBMBuAdBkBsBhBMBwBnB(AKApAzAxAgAsAzAxAgAsAzAxAoA(A,AKBlBnBqBeBuAzAqBnBkBnB)AgA9AgAzAqBnBkBnB)AsBwBdBMBuAdBkBsBhBMBwBnB(AKAiAqBdBvBdBhBOBgAsBmBdBuB;AgAdBsBnBlBdBKBiAgA9AgAsBwBdBMBuAdBkBsBhBMBwBnB(AKArBmBZBLBdBbBqBtBnBLBuAsBmBnB:AuAlBtBmB;AgA9AgAsBmBnB:AuAdBkBsBhBMBwBnB(AKApAwAgAsA0AyAwAwAwAwAwAwA2AuAwAgAsAwAgAsA3A2A1A4AyA0A2A0A0AuAwAoAvBdBmBuAyAlBhB=ANBgA9AgAdByBhBLBuAdBkBsBhBMBwBnB(AKApAwAgAsA4AxAwAwAwAwAwAwAyAuAwAgAsAwAgAsA0A1A4AyA5A4AwAwAyAwAuAwAoAvBdBmBuAyAlBhB=ANBgA9AgAmBnBhBsBhBrBnBIBuAdBkBsBhBMBwBnB(AKApAzA1AgAsAyA0AgAsA3AyAoA(A,AKBlBnBqBeBuAzAqBnBkBnB)AgA9AgAzAqBnBkBnB)AqBdBcBqBnB(AuAdBkBsBhBMBwBnB(AKAwAwAwAuAxAgA9AgAxBbBmBdBqBZBoBrBmBZBqBMBcBmBtBnBqBfBjBbBZB(AuAdBkBsBhBMBwBnB(AKApA1A1AyAgAsA1A1AyAgAsA1A1AyAoA(A,AKBlBnBqBeBuAzAqBnBkBnB)AgA9AgAzAqBnBkBnB)AcBmBtBnBqBfBjBbBZB(AuAdBkBsBhBMBwBnB(AKAoBnBMBgA9AgAsBmBdBqBZBIBuAdBkBsBhBMBwBnB(AKAiAdBkBsBhBMBtAwBnB(AiAgA9AgAdBlBZBGBuAdBkBsBhBMBwBnB(AKAKApAwAgAsAxAzA1A3AyA5A0A0AxAuAwAgAsAwAgAsAxAoAvBdBmBuAyAlBhB=ANBgA9AgAdByBhBLBuAoBnBMBKApAwAgAsAwAgAsAwAgAsA1AuAwAoAvBdBmBuAyAlBhB=ANBgA9AgAmBnBhBsBhBrBnBIBuAoBnBMBKAwAgA9AgAkBdBwBhBIBdByBhBLBqBdBcBqBnB(AuAoBnBMBKApAzA1AgAsAyA0AgAsA3AyAoA(A,AKBlBnBqBeBuAzAqBnBkBnB)AgA9AgAzAqBnBkBnB)AqBdBcBqBnB(AuAoBnBMBKApA0AwAyAgAsA0AxAxAgAsAwAoA(A,AKBlBnBqBeBuAzAqBnBkBnB)AgA9AgAzAqBnBkBnB)AcBmBtBnBqBfBjBbBZB(AuAoBnBMBKApAwAgAsA1AuAwAoAvBdBmBuAyAqBnBsBbBdBOBgA9AgAsBmBhBnBIBqBnBgBbBmB}AuAoBnBMBKAyAXBdBlBZBqB:AgA9AgAsBmBdBqBZBIBuAoBnBMBKAiAoBnBMBiAgA9AgAdBlBZBGBuAoBnBMBKAKApA3A3AyAgAsA3A3AyAgAsAzAyAgAsAzAyAoAvBdBmBuAsBbBdBKBgA9AgAqBdBsBmBdB)AdBbBhBkBLBuAvBnBcBZBgBLBKAdBbBhBkBLBuAdBoBxBMBdBkBZBbBLBuAlBtBmB;AgA9AgAdBoBxBMBdBkBZBbBLBuAvBnBcBZBgBLBKApAwAgAsAwAgAsAwAoA(A,AKBlBnBqBeBuAzAqBnBkBnB)AgA9AgAzAqBnBkBnB)AdBfBZBlBBBuAvBnBcBZBgBLBKAiAwA3A5AxA5A4A2A5A5A0AvAvA6AcBhBsBdBrBrBZBwBaBqBiAgA9AgAdBfBZBlBBBuAvBnBcBZBgBLBKApAwAgAsA1A3AyA5A0A0AxAuAxAgAsAwAgAsA3AyA0A2A5A2A2AwAuAxAoAvBdBmBuAyAlBhB=ANBgA9AgAdByBhBLBuAvBnBcBZBgBLBKApAwAgAsA1AuAwAgAsAwAgAsA1AuAwAoAvBdBmBuAyAlBhB=ANBgA9AgAmBnBhBsBhBrBnBIBuAvBnBcBZBgBLBKApAzA1AgAsAyA0AgAsA3AyAoA(A,AKBlBnBqBeBuAzAqBnBkBnB)AgA9AgAzAqBnBkBnB)AqBdBcBqBnB(AuAvBnBcBZBgBLBKAwAwAwAuAxAgA9AgAxBbBmBdBqBZBoBrBmBZBqBMBcBmBtBnBqBfBjBbBZB(AuAvBnBcBZBgBLBKApA1A1AyAgAsA1A1AyAgAsA1A1AyAoA(A,AKBlBnBqBeBuAzAqBnBkBnB)AgA9AgAzAqBnBkBnB)AcBmBtBnBqBfBjBbBZB(AuAvBnBcBZBgBLBKApA1AuAwAgAsA1AuAwAoAvBdBmBuAyAqBnBsBbBdBOBgA9AgAsBmBhBnBIBqBnBgBbBmB}AuAvBnBcBZBgBLBKAyAXBdBlBZBqB:AgA9AgAsBmBdBqBZBIBuAvBnBcBZBgBLBKAiAvBnBcBZBgBLBiAgA9AgAdBlBZBGBuAvBnBcBZBgBLBKAKApAwAgAsA4AzAyAuAwAgAsAwAgAsA0AzAyAuAwAoAvBdBmBuAyAlBhB=ANBgA9AgAdByBhBLBuAyAXBdBlBZBqB:AKApAwAgAsA1AuAwAgAsAwAgAsA1AuAwAoAvBdBmBuAyAlBhB=ANBgA9AgAmBnBhBsBhBrBnBIBuAyAXBdBlBZBqB:AKAwAgA9AgAkBdBwBhBIBdByBhBLBqBdBcBqBnB(AuAyAXBdBlBZBqB:AKApAzA1AgAsAyA0AgAsA3AyAoA(A,AKBlBnBqBeBuAzAqBnBkBnB)AgA9AgAzAqBnBkBnB)AqBdBcBqBnB(AuAyAXBdBlBZBqB:AKApA1A1AyAgAsA1A1AyAgAsA1A1AyAoA(A,AKBlBnBqBeBuAzAqBnBkBnB)AgA9AgAzAqBnBkBnB)AcBmBtBnBqBfBjBbBZB(AuAyAXBdBlBZBqB:AKApA1AuAwAgAsA1AuAwAoAvBdBmBuAyAqBnBsBbBdBOBgA9AgAsBmBhBnBIBqBnBgBbBmB}AuAyAXBdBlBZBqB:AKA5AwAqBdBsBhBtBqBeBxBwBnBkBaBXBqBdBvBdBhBOBsBmBdBuB;AdBsBnBlBdBKBgA9AgAsBmBdBqBZBIBuAyAXBdBlBZBqB:AKAKAkBdBaBZBEBdBfBZBlBBBgA9AgAsBmBdBqBZBIBuAsBmBhBZBqBsBrBmBnB)AnBhBsBZBKBsBbBdBoBrB}ABBNBKAKAiAfBmBoBuAqBdBcBkBnBgBdBbBZBkBIBdBfBZBlBBBhBtB,AvAhBtBvArBdBqBtBsBwBdBsBvAvA6AsBdBrBrBZBwBaBqBiAgA9AgAdBfBZBlBBBuAkBdBaBZBEBdBfBZBlBBBKApAwAgAsAxAgAsAwAgAsA1A5AzAyAzA3A4A4A3AwAuAwAoAvBdBmBuAyAlBhB=ANBgA9AgAdByBhBLBuAkBdBaBZBEBdBfBZBlBBBKAwAgA9AgAkBdBwBhBIBdByBhBLBqBdBcBqBnB(AuAkBdBaBZBEBdBfBZBlBBBKApAwAgAsAwAgAsAwAoA(A,AKBlBnBqBeBuAzAqBnBkBnB)AgA9AgAzAqBnBkBnB)AqBdBcBqBnB(AuAkBdBaBZBEBdBfBZBlBBBKAwAwAwAuAxAgA9AgAxBbBmBdBqBZBoBrBmBZBqBMBcBmBtBnBqBfBjBbBZB(AuAkBdBaBZBEBdBfBZBlBBBKApA1A1AyAgAsA1A1AyAgAsA1A1AyAoA(A,AKBlBnBqBeBuAzAqBnBkBnB)AgA9AgAzAqBnBkBnB)AcBmBtBnBqBfBjBbBZB(AuAkBdBaBZBEBdBfBZBlBBBKAdBlBZBqB:AgA9AgAsBmBdBqBZBIBuAkBdBaBZBEBdBfBZBlBBBKAKAdBtBqBsBgA9AgAcBdBoBoBZBqBPBsBwBdBMBuAwBnB(AsBwBdBMBKAwAwAwAuA0AxAgA9AgAdByBhBLBsBwBdBMBuAwBnB(AsBwBdBMBKApAwAgAsAwAgAsAwAoA(A,AKBlBnBqBeBuAzAqBnBkBnB)AgA9AgAzAqBnBkBnB)AsBwBdBMBuAwBnB(AsBwBdBMBKAiAiAgA9AgAsBwBdBMBuAwBnB(AsBwBdBMBKAiAsBmBdBlBdBtBfBqB}AiAgA9AgAsBwBdBMBqBdBcBkBnBgBdBbBZBkBIBuAwBnB(AsBwBdBMBKApAwAwAxAgAsAwAwAxAgAsAwAwAxAoA(A,AKBlBnBqBeBuAzAqBnBkBnB)AgA9AgAzAqBnBkBnB)AqBdBcBkBnBgBdBbBZBkBIBuAwBnB(AsBwBdBMBKArBmBZBLBdBbBqBtBnBLBuAsBmBnB:AuAlBtBmB;AgA9AgAsBmBnB:AuAwBnB(AsBwBdBMBKAdBrBkBZBeBgA9AgArBtBbBnB:AmBHBsBwBdBMBqBZBdBkB)AuAwBnB(AsBwBdBMBKApAwAgAsAzAxA3AuAwAgAsAwAgAsAzA2A3AxA2A2AwAxAzAuAwAoAvBdBmBuAyAlBhB=ANBgA9AgAdByBhBLBuAwBnB(AsBwBdBMBKApAwAgAsA5A5A0AwAwAwA2AzAxAuAwAgAsAwAgAsA3A1AwAyAyA0AxA5A0AuAwAoAvBdBmBuAyAlBhB=ANBgA9AgAmBnBhBsBhBrBnBIBuAwBnB(AsBwBdBMBKApAzA4AxAgAsAzA4AxAgAsAzA4AxAoA(A,AKBlBnBqBeBuAzAqBnBkBnB)AgA9AgAzAqBnBkBnB)AqBdBcBqBnB(AuAwBnB(AsBwBdBMBKApA0AxAyAgAsA0AxAyAgAsA0AxAyAoA(A,AKBlBnBqBeBuAzAqBnBkBnB)AgA9AgAzAqBnBkBnB)AcBmBtBnBqBfBjBbBZB(AuAwBnB(AsBwBdBMBKAdBrBkBZBeBgA9AgAdBuBhBsBbB}AuAwBnB(AsBwBdBMBKAdBlBZBqB:AgA9AgAsBmBdBqBZBIBuAwBnB(AsBwBdBMBKAKAsBeBdBEBuAsBmBdBlBmBfBhBkB}AQBsBwBdBMBuAlBtBmB;AgA9AgAsBmBdBlBmBfBhBkB}AQBsBwBdBMBuAdBlBZBGBsBlBKBKAwAwAwAuA0AxAgA9AgAdByBhBLBsBwBdBMBuAdBlBZBGBsBlBKBKApAzAxAgAsAzAxAgAsAzAxAoA(A,AKBlBnBqBeBuAzAqBnBkBnB)AgA9AgAzAqBnBkBnB)AsBwBdBMBuAdBlBZBGBsBlBKBKAiAdBlBZBGBgAsBmBdBuB;AgAdBsBnBlBdBKBiAgA9AgAsBwBdBMBuAdBlBZBGBsBlBKBKArBmBZBLBdBbBqBtBnBLBuAsBmBnB:AuAlBtBmB;AgA9AgAsBmBnB:AuAdBlBZBGBsBlBKBKApAwAgAsA0AyAwAwAwAwAwAwA2AuAwAgAsAwAgAsA1AzA0A4AzA3A0A2AzAuAwAoAvBdBmBuAyAlBhB=ANBgA9AgAdByBhBLBuAdBlBZBGBsBlBKBKApAwAgAsAyAxAyAwAwAwAwAwAyAuAwAgAsAwAgAsA2A3A0A5A3A3AxAwAxAuAwAoAvBdBmBuAyAlBhB=ANBgA9AgAmBnBhBsBhBrBnBIBuAdBlBZBGBsBlBKBKApAzA1AgAsAyA0AgAsA3AyAoA(A,AKBlBnBqBeBuAzAqBnBkBnB)AgA9AgAzAqBnBkBnB)AqBdBcBqBnB(AuAdBlBZBGBsBlBKBKAwAwAwAuAxAgA9AgAxBbBmBdBqBZBoBrBmBZBqBMBcBmBtBnBqBfBjBbBZB(AuAdBlBZBGBsBlBKBKApA1A1AyAgAsA1A1AyAgAsA1A1AyAoA(A,AKBlBnBqBeBuAzAqBnBkBnB)AgA9AgAzAqBnBkBnB)AcBmBtBnBqBfBjBbBZB(AuAdBlBZBGBsBlBKBKAdBlBZBqB:AgA9AgAsBmBdBqBZBIBuAdBlBZBGBsBlBKBKAiAdBlBZBGBsBlBKBiAgA9AgAdBlBZBGBuAdBlBZBGBsBlBKBKAKAdBtBqBsBgA9AgAcBdBoBoBZBqBPBsBwBdBMBuAdBqBhB:AKAwAwAwAuA0AxAgA9AgAdByBhBLBsBwBdBMBuAdBqBhB:AKApAwAgAsAwAgAsAwAoA(A,AKBlBnBqBeBuAzAqBnBkBnB)AgA9AgAzAqBnBkBnB)AsBwBdBMBuAdBqBhB:AKAiAqBdBuBqBdBLBgAdBqBhB:AiAgA9AgAsBwBdBMBuAdBqBhB:AKArBmBZBLBdBbBqBtBnBLBuAsBmBnB:AuAlBtBmB;AgA9AgAsBmBnB:AuAdBqBhB:AKApAwAgAsAzAxA3AuAwAgAsAwAgAsA1AxA1A0A4AwA3A2AxAuAwAoAvBdBmBuAyAlBhB=ANBgA9AgAdByBhBLBuAdBqBhB:AKApAwAgAsA1AzA2AzA1A5A1AzAxAuAwAgAsAwAgAsA1AyA4A2AzA3AwAyA4AuAwAoAvBdBmBuAyAlBhB=ANBgA9AgAmBnBhBsBhBrBnBIBuAdBqBhB:AKApAzA4AxAgAsAzA4AxAgAsAzA4AxAoA(A,AKBlBnBqBeBuAzAqBnBkBnB)AgA9AgAzAqBnBkBnB)AqBdBcBqBnB(AuAdBqBhB:AKApA0AxAyAgAsA0AxAyAgAsA0AxAyAoA(A,AKBlBnBqBeBuAzAqBnBkBnB)AgA9AgAzAqBnBkBnB)AcBmBtBnBqBfBjBbBZB(AuAdBqBhB:AKAdBlBZBqB:AgA9AgAsBmBdBqBZBIBuAdBqBhB:AKAiAdBqBhB:AiAgA9AgAdBlBZBGBuAdBqBhB:AKAKAdBlBZBqB:AgA9AgAsBmBdBqBZBIBuAsBmBdBuB;AdBsBnBlBdBKBKAiAsBmBdBuB;AdBsBnBlBdBKBiAgA9AgAdBlBZBGBuAsBmBdBuB;AdBsBnBlBdBKBKAKAdBrBkBZBeBgA9AgAdBkBaBhBrBhBOBuAdBlBZBqB:AKApAwAzAgAsAwAgAsAwAgAsAxAoAvBdBmBuAyAlBhB=ANBgA9AgAdByBhBLBuAdBlBZBqB:AKApAwAgAsAwAgAsAwAgAsAwAoAvBdBmBuAyAlBhB=ANBgA9AgAmBnBhBsBhBrBnBIBuAdBlBZBqB:AKAwAgA9AgAkBdBwBhBIBdByBhBLBqBdBcBqBnB(AuAdBlBZBqB:AKApAwAgAsAwAgAsAwAoA(A,AKBlBnBqBeBuAzAqBnBkBnB)AgA9AgAzAqBnBkBnB)AqBdBcBqBnB(AuAdBlBZBqB:AKApAwA0AyAgAsAwA0AyAgAsAwA0AyAoA(A,AKBlBnBqBeBuAzAqBnBkBnB)AgA9AgAzAqBnBkBnB)AcBmBtBnBqBfBjBbBZB(AuAdBlBZBqB:AKAsBoBhBqBbBrBgA9AgAsBmBdBqBZBIBuAdBlBZBqB:AKAKAdBrBkBZBeBgA9AgAcBdBkBaBZBmB;AuA5AwAqBdBsBhBtBqBeBxBwBnBkBaBXBqBdBvBdBhBOBsBmBdBuB;AdBsBnBlBdBKBKAdBrBkBZBeBgA9AgAmBvBZBoBLBmBHBsBdBrBdBKBuA5AwAqBdBsBhBtBqBeBxBwBnBkBaBXBqBdBvBdBhBOBsBmBdBuB;AdBsBnBlBdBKBKA1AyAwAwAwAwAwAwAwAxAgA9AgAqBdBcBqBHBxBZBkBoBrBhB=AuA5AwAqBdBsBhBtBqBeBxBwBnBkBaBXBqBdBvBdBhBOBsBmBdBuB;AdBsBnBlBdBKBKAfBmBhBkBaBhBLBuAqBnBhBuBZBgBdB(AwBdBcBmBBBSBuAlBtBmB;AgA9AgAqBnBhBuBZBgBdB(AwBdBcBmBBBSBuA5AwAqBdBsBhBtBqBeBxBwBnBkBaBXBqBdBvBdBhBOBsBmBdBuB;AdBsBnBlBdBKBKApAiAhBtB,AqBdBxBZBkBIBiAoAcBkBhBgB)AqBnB:AsBhBZBPB6AqBdBxBZBkBIBkBZBbBnBEBuArBqBdBxBZBkBIBuAdBlBZBfBgA9AgAsBmBdBqBZBIBuA5AwAqBdBsBhBtBqBeBxBwBnBkBaBXBqBdBvBdBhBOBsBmBdBuB;AdBsBnBlBdBKBKAiAqBdBvBdBhBOBsBmBdBuB;AdBsBnBlBdBKBiAgA9AgAdBlBZBGBuA5AwAqBdBsBhBtBqBeBxBwBnBkBaBXBqBdBvBdBhBOBsBmBdBuB;AdBsBnBlBdBKBKAKApAiAdBtBkBZBOBsBbBdBiBaBHBiAoAvBdBmBuAdBbBmBZBsBrBmBBBgA9AgAsBmBdBuB;AdBsBnBlBdBKBgAkBZBbBnBkBKApAiAsBtBnBxBZBEBsBrBhBEBBBNBiAoAvBdBmBuAdBbBmBZBsBrBmBBBgA9AgAsBtBnBxBZBEBsBrBhBEBBBNBgAkBZBbBnBkBKApAiAdBlBZBqB:AfBmBhBkBkBnBqBbBLBiAoAvBdBmBuAdBbBmBZBsBrBmBBBgA9AgAsBrBhBEBgAkBZBbBnBkBKApAiAmBnBsBsBtB(AsBwBdBMBiAoAvBdBmBuAdBbBmBZBsBrBmBBBgA9AgAgBrBdBqBeBdBKBgAkBZBbBnBkBKApAiAdBkBZBbBLBBBNBiAoAvBdBmBuAdBbBmBZBsBrBmBBBgA9AgAdBkBZBbBLBBBNBgAkBZBbBnBkBKApAiAsBmBhBZBqBsBrBmBnB)AdByBhBLBsBwBdBMBBBNBiAoAvBdBmBuAdBbBmBZBsBrBmBBBgA9AgAsBmBhBZBqBsBrBmBnB)AdByBhBLBsBwBdBMBBBNBgAkBZBbBnBkBKApAiAmBnBsBsBtB(AsBwBdBMBiAoAvBdBmBuAdBbBmBZBsBrBmBBBgA9AgAmBsBaBgAkBZBbBnBkBKApAiAdBlBZBqB:AiAoAvBdBmBuAdBbBmBZBsBrBmBBBgA9AgAdBrBnBkB)AgAkBZBbBnBkBKApAiAkBdBaBZBEBsBwBdBMBiAoAvBdBmBuAdBbBmBZBsBrBmBBBgA9AgAdBkBsBhBMBwBnB(AgAkBZBbBnBkBKApAiAdBlBZBqB:AiAoAvBdBmBuAdBbBmBZBsBrBmBBBgA9AgAoBnBMBgAkBZBbBnBkBKApAiAkBdBaBZBEBdBfBZBlBBBiAoAvBdBmBuAdBbBmBZBsBrBmBBBgA9AgAvBnBcBZBgBLBgAkBZBbBnBkBKApAiAdBlBZBqB:AiAoAvBdBmBuAdBbBmBZBsBrBmBBBgA9AgAyAXBdBlBZBqB:AgAkBZBbBnBkBKApAiAsBmBhBZBqBsBrBmBnB)AnBhBsBZBKBsBbBdBoBrB}ABBNBiAoAvBdBmBuAdBbBmBZBsBrBmBBBgA9AgAsBmBhBZBqBsBrBmBnB)AnBhBsBZBKBsBbBdBoBrB}ABBNBgAkBZBbBnBkBKApAiAkBdBaBZBEBdBfBZBlBBBiAoAvBdBmBuAdBbBmBZBsBrBmBBBgA9AgAkBdBaBZBEBdBfBZBlBBBgAkBZBbBnBkBKApAiAwBnB(AsBwBdBMBiAoAvBdBmBuAdBbBmBZBsBrBmBBBgA9AgAwBnB(AsBwBdBMBgAkBZBbBnBkBKApAiAkBdBaBZBEBsBwBdBMBiAoAvBdBmBuAdBbBmBZBsBrBmBBBgA9AgAdBlBZBGBsBlBKBgAkBZBbBnBkBKApAiAmBnBsBsBtB(AsBwBdBMBiAoAvBdBmBuAdBbBmBZBsBrBmBBBgA9AgAdBqBhB:AgAkBZBbBnBkBKApAiAdBlBZBqB:AiAoAvBdBmBuAdBbBmBZBsBrBmBBBgA9AgAdBlBZBqB:AgAkBZBbBnBkBKApAiAhBtB,AmBdBdBqBbBLBiAoAvBdBmBuAdBbBmBZBsBrBmBBBgA9AgA5AwAqBdBsBhBtBqBeBxBwBnBkBaBXBqBdBvBdBhBOBsBmBdBuB;AdBsBnBlBdBKBgAkBZBbBnBkB'))()
+local RemoteEventViewer_bloxyfruiter09 = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local Fire = Instance.new("TextButton")
+local RmtName = Instance.new("TextLabel")
+local TextBox = Instance.new("TextBox")
+local ImageLabel = Instance.new("ImageLabel")
+local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
+local Frame_2 = Instance.new("Frame")
+local Shadow = Instance.new("ImageLabel")
+local Top = Instance.new("Frame")
+local BoxTitle = Instance.new("TextLabel")
+local Close = Instance.new("Frame")
+local btn = Instance.new("TextButton")
+local UITextSizeConstraint = Instance.new("UITextSizeConstraint")
+local UIScale = Instance.new("UIScale")
+local Refresh = Instance.new("TextButton")
+local List = Instance.new("ScrollingFrame")
+local UIListLayout = Instance.new("UIListLayout")
+local RemoteEvent = Instance.new("ObjectValue")
+
+RemoteEventViewer_bloxyfruiter09.Name = "RemoteEventViewer"
+RemoteEventViewer_bloxyfruiter09.Parent = game.CoreGui
+RemoteEventViewer_bloxyfruiter09.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+RemoteEventViewer_bloxyfruiter09.DisplayOrder = 1500000025
+RemoteEventViewer_bloxyfruiter09.ResetOnSpawn = false
+RemoteEventViewer_bloxyfruiter09.Enabled = false
+
+Frame.Parent = script
+Frame.BackgroundColor3 = Color3.fromRGB(240, 240, 240)
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0, 0, 0, 0)
+Frame.Size = UDim2.new(1, 0, 0, 30)
+Frame.Visible = false
+
+RemoteEvent.Name = "RemoteEvent"
+RemoteEvent.Parent = Frame
+
+Fire.Name = "Fire"
+Fire.Parent = Frame
+Fire.BackgroundColor3 = Color3.fromRGB(214, 214, 214)
+Fire.BorderColor3 = Color3.fromRGB(183, 183, 183)
+Fire.Position = UDim2.new(0.820736825, 0, 0.135953635, 0)
+Fire.Size = UDim2.new(0.167084515, 0, 0.713, 0)
+Fire.Font = Enum.Font.SourceSans
+Fire.Text = "Fire Server"
+Fire.TextColor3 = Color3.fromRGB(0, 0, 0)
+Fire.TextSize = 14.000
+Fire.TextWrapped = true
+
+RmtName.Name = "RmtName"
+RmtName.Parent = Frame
+RmtName.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+RmtName.BackgroundTransparency = 1.000
+RmtName.BorderColor3 = Color3.fromRGB(27, 42, 53)
+RmtName.Position = UDim2.new(0.101779476, 0, 0.200000212, 0)
+RmtName.Size = UDim2.new(0.364738435, 0, 0.600000024, 0)
+RmtName.Font = Enum.Font.SourceSans
+RmtName.Text = "Remote Event Name"
+RmtName.TextColor3 = Color3.fromRGB(13, 13, 13)
+RmtName.TextSize = 14.000
+RmtName.TextXAlignment = Enum.TextXAlignment.Left
+
+TextBox.Parent = Frame
+TextBox.Active = false
+TextBox.BackgroundColor3 = Color3.fromRGB(214, 214, 214)
+TextBox.BorderColor3 = Color3.fromRGB(183, 183, 183)
+TextBox.Position = UDim2.new(0.491422057, 0, 0.136000499, 0)
+TextBox.Size = UDim2.new(0.310661763, 0, 0.713, 0)
+TextBox.ClearTextOnFocus = false
+TextBox.Font = Enum.Font.SourceSans
+TextBox.PlaceholderColor3 = Color3.fromRGB(100, 100, 100)
+TextBox.PlaceholderText = "Arguement"
+TextBox.Text = ""
+TextBox.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.TextSize = 14.000
+TextBox.TextWrapped = true
+
+ImageLabel.Parent = Frame
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel.BorderSizePixel = 0
+ImageLabel.Size = UDim2.new(0.0788732395, 0, 1, 0)
+ImageLabel.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+
+UIAspectRatioConstraint.Parent = ImageLabel
+
+Frame_2.Parent = RemoteEventViewer_bloxyfruiter09
+Frame_2.AnchorPoint = Vector2.new(0.5, 0.5)
+Frame_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame_2.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Frame_2.BorderSizePixel = 0
+Frame_2.Position = UDim2.new(0.5, 0, 0.5, 0)
+Frame_2.Size = UDim2.new(0.234, 0, 0.238, 0)
+
+Shadow.Name = "Shadow"
+Shadow.Parent = Frame_2
+Shadow.AnchorPoint = Vector2.new(0.5, 0.5)
+Shadow.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Shadow.BackgroundTransparency = 1.000
+Shadow.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Shadow.Position = UDim2.new(0.5, 0, 0.5, 0)
+Shadow.Size = UDim2.new(1.06696427, 0, 1.1449275, 0)
+Shadow.Image = "rbxassetid://4996891970"
+Shadow.ImageColor3 = Color3.fromRGB(0, 0, 0)
+Shadow.ScaleType = Enum.ScaleType.Slice
+Shadow.SliceCenter = Rect.new(23, 23, 277, 277)
+
+Top.Name = "Top"
+Top.Parent = Frame_2
+Top.AnchorPoint = Vector2.new(0.5, 0)
+Top.BackgroundColor3 = Color3.fromRGB(0, 114, 204)
+Top.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Top.BorderSizePixel = 0
+Top.Position = UDim2.new(0.5, 0, 0, 0)
+Top.Size = UDim2.new(1, 0, 0.144927531, 0)
+
+BoxTitle.Name = "Box-Title"
+BoxTitle.Parent = Top
+BoxTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BoxTitle.BackgroundTransparency = 1.000
+BoxTitle.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BoxTitle.Position = UDim2.new(0.0200892854, 0, 0.200000018, 0)
+BoxTitle.Size = UDim2.new(0.446428567, 0, 0.600000024, 0)
+BoxTitle.Font = Enum.Font.SourceSans
+BoxTitle.Text = "Remote Event Viewer"
+BoxTitle.TextColor3 = Color3.fromRGB(13, 13, 13)
+BoxTitle.TextSize = 14.000
+BoxTitle.TextWrapped = true
+BoxTitle.TextXAlignment = Enum.TextXAlignment.Left
+
+Close.Name = "Close"
+Close.Parent = Top
+Close.AnchorPoint = Vector2.new(1, 0)
+Close.BackgroundColor3 = Color3.fromRGB(0, 114, 204)
+Close.BackgroundTransparency = 1.000
+Close.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Close.BorderSizePixel = 0
+Close.Position = UDim2.new(0.982142866, 0, 0.266666681, 0)
+Close.Size = UDim2.new(0.03125, 0, 0.466666698, 0)
+
+btn.Name = "btn"
+btn.Parent = Close
+btn.AnchorPoint = Vector2.new(0.5, 0.5)
+btn.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+btn.BackgroundTransparency = 1.000
+btn.BorderColor3 = Color3.fromRGB(27, 42, 53)
+btn.BorderSizePixel = 0
+btn.Position = UDim2.new(0.464285642, 0, 0.50000006, 0)
+btn.Size = UDim2.new(2.21428561, 0, 2.14285731, 0)
+btn.Font = Enum.Font.Garamond
+btn.Text = "✕"
+btn.TextColor3 = Color3.fromRGB(0, 0, 0)
+btn.TextSize = 14.000
+btn.TextWrapped = true
+
+UITextSizeConstraint.Parent = btn
+UITextSizeConstraint.MaxTextSize = 28
+UITextSizeConstraint.MinTextSize = 25
+
+UIScale.Parent = Frame_2
+
+Refresh.Name = "Refresh"
+Refresh.Parent = Frame_2
+Refresh.BackgroundColor3 = Color3.fromRGB(214, 214, 214)
+Refresh.BorderColor3 = Color3.fromRGB(183, 183, 183)
+Refresh.Position = UDim2.new(0.834821403, 0, 0.850241542, 0)
+Refresh.Size = UDim2.new(0.142857149, 0, 0.106280193, 0)
+Refresh.Font = Enum.Font.SourceSans
+Refresh.Text = "Refresh"
+Refresh.TextColor3 = Color3.fromRGB(0, 0, 0)
+Refresh.TextSize = 14.000
+Refresh.TextWrapped = true
+
+List.Name = "List"
+List.Parent = Frame_2
+List.Active = true
+List.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+List.BackgroundTransparency = 1.000
+List.BorderColor3 = Color3.fromRGB(0, 0, 0)
+List.BorderSizePixel = 0
+List.Position = UDim2.new(0.02, 0, 0.187, 0)
+List.Size = UDim2.new(0.791, 0, 0.768, 0)
+List.CanvasSize = UDim2.new(0, 0, 100000, 0)
+List.ScrollBarThickness = 0
+
+UIListLayout.Parent = List
+UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+
+local gui = Frame_2
+local guiInput = Top
+
+local dragging
+local dragInput
+local dragStart
+local startPos
+
+local function update(input)
+	local delta = input.Position - dragStart
+	gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+end
+
+guiInput.InputBegan:Connect(function(input)
+	if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+		dragging = true
+		dragStart = input.Position
+		startPos = gui.Position
+
+		input.Changed:Connect(function()
+			if input.UserInputState == Enum.UserInputState.End then
+				dragging = false
+			end
+		end)
+	end
+end)
+
+guiInput.InputChanged:Connect(function(input)
+	if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+		dragInput = input
+	end
+end)
+
+game:GetService("UserInputService").InputChanged:Connect(function(input)
+	if input == dragInput and dragging then
+		update(input)
+	end
+end)
+
+gui.Size = UDim2.fromScale(0.229, 0.227)
+for _, v in gui:GetDescendants() do
+	if v:IsA("Frame") then
+		game:GetService("TweenService"):Create(
+			v,
+			TweenInfo.new(0),
+			{
+				BackgroundTransparency = 0
+			}):Play()
+	elseif v:IsA("TextButton") then
+		game:GetService("TweenService"):Create(
+			v,
+			TweenInfo.new(0),
+			{
+				TextTransparency = 0
+			}):Play()
+	elseif v:IsA("TextLabel") then
+		game:GetService("TweenService"):Create(
+			v,
+			TweenInfo.new(0),
+			{
+				TextTransparency = 0
+			}):Play()
+	elseif v:IsA("ImageLabel") then
+		game:GetService("TweenService"):Create(
+			v,
+			TweenInfo.new(0),
+			{
+				ImageTransparency = 0
+			}):Play()
+	end
+end
+RemoteEventViewer_bloxyfruiter09.Enabled = true
+game:GetService("TweenService"):Create(
+	gui,
+	TweenInfo.new(0.5),
+	{
+		Size = UDim2.fromScale(0.234, 0.239)
+	}):Play()
+for _, v in gui:GetDescendants() do
+	if v:IsA("Frame") then
+		game:GetService("TweenService"):Create(
+			v,
+			TweenInfo.new(0.1),
+			{
+				BackgroundTransparency = 0
+			}):Play()
+	elseif v:IsA("TextButton") then
+		game:GetService("TweenService"):Create(
+			v,
+			TweenInfo.new(0.1),
+			{
+				TextTransparency = 0
+			}):Play()
+	elseif v:IsA("TextLabel") then
+		game:GetService("TweenService"):Create(
+			v,
+			TweenInfo.new(0.1),
+			{
+				TextTransparency = 0
+			}):Play()
+	elseif v:IsA("ImageLabel") then
+		game:GetService("TweenService"):Create(
+			v,
+			TweenInfo.new(0.1),
+			{
+				ImageTransparency = 0
+			}):Play()
+	end
+end
+btn.MouseButton1Click:Connect(function ()
+	Frame_2.Size = UDim2.fromScale(0.234, 0.239)
+	game:GetService("TweenService"):Create(
+		Frame_2,
+		TweenInfo.new(0.1),
+		{
+			Size = UDim2.fromScale(0.229, 0.227)
+		}):Play()
+	for _, v in RemoteEventViewer_bloxyfruiter09:GetDescendants() do
+		if v:IsA("Frame") then
+			game:GetService("TweenService"):Create(
+				v,
+				TweenInfo.new(0.1),
+				{
+					BackgroundTransparency = 1
+				}):Play()
+		elseif v:IsA("TextButton") then
+			game:GetService("TweenService"):Create(
+				v,
+				TweenInfo.new(0.1),
+				{
+					TextTransparency = 1
+				}):Play()
+		elseif v:IsA("TextLabel") then
+			game:GetService("TweenService"):Create(
+				v,
+				TweenInfo.new(0.1),
+				{
+					TextTransparency = 1
+				}):Play()
+		elseif v:IsA("ImageLabel") then
+			game:GetService("TweenService"):Create(
+				v,
+				TweenInfo.new(0.1),
+				{
+					ImageTransparency = 1
+				}):Play()
+		end
+	end
+	wait(0.1)
+	RemoteEventViewer_bloxyfruiter09:Destroy()
+end)
+
+local function fireServer (event, arguement)
+	if event ~= nil then
+		if event:IsA("RemoteEvent") then
+			event:FireServer(arguement)
+		elseif event:IsA("BindableEvent") then
+			event:Fire(arguement)
+		elseif event:IsA("UnreliableRemoteEvent") then
+			event:FireServer(arguement)
+		elseif event:IsA("BindableFunction") then
+			event:Invoke(arguement)
+		elseif event:IsA("RemoteFunction") then
+			event:InvokeServer(arguement)
+		end
+	end
+end
+
+local function useFirePreset (clone)
+	local event = clone.RemoteEvent.Value
+	local arguement = clone.TextBox.Text
+	fireServer(event, arguement)
+end
+
+local function refresh ()
+	for _, v in List:GetChildren() do
+		if v:IsA("Frame") then
+			v:Destroy()
+		end
+	end
+	for _, v in game:GetDescendants() do
+		if v:IsA("RemoteEvent") then
+			local clone = script.Frame:Clone()
+			clone.RemoteEvent.Value = v
+			clone.Name = v.Name
+			clone.RmtName.Text = v.Name
+			clone.ImageLabel.Image = "rbxassetid://129772756154651"
+			clone.Parent = List
+			clone.Visible = true
+			clone.Size = UDim2.new(1, 0, 0, 30)
+			clone.Fire.MouseButton1Click:Connect(function ()
+				useFirePreset(clone)
+			end)
+		elseif v:IsA("BindableEvent") then
+			local clone = script.Frame:Clone()
+			clone.RemoteEvent.Value = v
+			clone.Name = v.Name
+			clone.RmtName.Text = v.Name
+			clone.ImageLabel.Image = "rbxassetid://73757976361408"
+			clone.Parent = List
+			clone.Visible = true
+			clone.Size = UDim2.new(1, 0, 0, 30)
+			clone.Fire.MouseButton1Click:Connect(function ()
+				useFirePreset(clone)
+			end)
+		elseif v:IsA("UnreliableRemoteEvent") then
+			local clone = script.Frame:Clone()
+			clone.RemoteEvent.Value = v
+			clone.Name = v.Name
+			clone.RmtName.Text = v.Name
+			clone.ImageLabel.Image = "rbxassetid://127579179197762"
+			clone.Parent = List
+			clone.Visible = true
+			clone.Size = UDim2.new(1, 0, 0, 30)
+			clone.Fire.MouseButton1Click:Connect(function ()
+				useFirePreset(clone)
+			end)
+		elseif v:IsA("RemoteFunction") then
+			local clone = script.Frame:Clone()
+			clone.RemoteEvent.Value = v
+			clone.Name = v.Name
+			clone.RmtName.Text = v.Name
+			clone.ImageLabel.Image = "rbxassetid://107569878623034"
+			clone.Parent = List
+			clone.Visible = true
+			clone.Size = UDim2.new(1, 0, 0, 30)
+			clone.Fire.MouseButton1Click:Connect(function ()
+				useFirePreset(clone)
+			end)
+		elseif v:IsA("BindableFunction") then
+			local clone = script.Frame:Clone()
+			clone.RemoteEvent.Value = v
+			clone.Name = v.Name
+			clone.RmtName.Text = v.Name
+			clone.ImageLabel.Image = "rbxassetid://88776573690415"
+			clone.Parent = List
+			clone.Visible = true
+			clone.Size = UDim2.new(1, 0, 0, 30)
+			clone.Fire.MouseButton1Click:Connect(function ()
+				useFirePreset(clone)
+			end)
+		end
+	end
+end
+
+Refresh.MouseButton1Click:Connect(refresh)
+
+guiInput.Close.btn.MouseEnter:Connect(function ()
+	game:GetService("TweenService"):Create(
+		guiInput.Close.btn,
+		TweenInfo.new(0.25),
+		{
+			BackgroundTransparency = 0
+		}):Play()
+end)
+
+guiInput.Close.btn.MouseLeave:Connect(function ()
+	game:GetService("TweenService"):Create(
+		guiInput.Close.btn,
+		TweenInfo.new(0.25),
+		{
+			BackgroundTransparency = 1
+		}):Play()
+end)
+
+refresh()
