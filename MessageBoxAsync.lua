@@ -16,9 +16,9 @@ return function (tlt, dcpt)
 	local UIStroke_2 = Instance.new("UIStroke")
 
 	sg.Name = "MessageBox"
-	sg.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+	sg.Parent = game.Players.LocalPlayer:WaitForChild("CoreGui")
 	sg.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-	sg.DisplayOrder = 990000000000
+	sg.DisplayOrder = 9999999999990
 	sg.ResetOnSpawn = false
 	sg.IgnoreGuiInset = true
 
