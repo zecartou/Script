@@ -1146,11 +1146,11 @@ G2L["6e"] = Instance.new("UIAspectRatioConstraint", G2L["6d"]);
 
 -- StarterGui.RemoteEventViewer.LocalScript
 local function C_67()
-local script = G2L["67"];
+	local script = G2L["67"];
 	local sgui = script.Parent
 	local gui = sgui.Frame
 	local guiInput = gui.Top
-	
+
 	local overlayed = true
 	local filterData = {
 		parentProprety = {
@@ -1171,23 +1171,23 @@ local script = G2L["67"];
 			BindableFunction = true
 		}
 	}
-	
+
 	local dragging
 	local dragInput
 	local dragStart
 	local startPos
-	
+
 	local function update(input)
 		local delta = input.Position - dragStart
 		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
 	end
-	
+
 	guiInput.InputBegan:Connect(function(input)
 		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
 			dragging = true
 			dragStart = input.Position
 			startPos = gui.Position
-	
+
 			input.Changed:Connect(function()
 				if input.UserInputState == Enum.UserInputState.End then
 					dragging = false
@@ -1195,19 +1195,19 @@ local script = G2L["67"];
 			end)
 		end
 	end)
-	
+
 	guiInput.InputChanged:Connect(function(input)
 		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
 			dragInput = input
 		end
 	end)
-	
+
 	game:GetService("UserInputService").InputChanged:Connect(function(input)
 		if input == dragInput and dragging then
 			update(input)
 		end
 	end)
-	
+
 	gui.Size = UDim2.fromScale(0.229, 0.227)
 	for _, v in gui:GetDescendants() do
 		wait()
@@ -1361,7 +1361,7 @@ local script = G2L["67"];
 		wait(0.1)
 		sgui:Destroy()
 	end)
-	
+
 	local function fireServer (event, arguement)
 		if event ~= nil then
 			if event:IsA("RemoteEvent") then
@@ -1377,16 +1377,16 @@ local script = G2L["67"];
 			end
 		end
 	end
-	
+
 	local function useFirePreset (clone)
 		local event = clone.RemoteEvent.Value
 		local arguement = clone.TextBox.Text
 		fireServer(event, arguement)
 	end
-	
+
 	local refreshFilterDataTime = 0
 	local refreshFilterDataTimeStop = true
-	
+
 	local function refreshFilterData ()
 		for _, v in gui.Topbar.Filter.FilterFrame.ClassType.ClassTypeFrame:GetChildren() do
 			if v:IsA("TextButton") then
@@ -1399,7 +1399,7 @@ local script = G2L["67"];
 			end
 		end
 	end
-	
+
 	local function refresh ()
 		refreshFilterData()
 		for _, v in gui.List:GetChildren() do
@@ -1485,9 +1485,9 @@ local script = G2L["67"];
 			end
 		end
 	end
-	
+
 	gui.Refresh.MouseButton1Click:Connect(refresh)
-	
+
 	guiInput.Close.btn.MouseEnter:Connect(function ()
 		game:GetService("TweenService"):Create(
 			guiInput.Close.btn,
@@ -1496,7 +1496,7 @@ local script = G2L["67"];
 				BackgroundTransparency = 0
 			}):Play()
 	end)
-	
+
 	guiInput.Close.btn.MouseLeave:Connect(function ()
 		game:GetService("TweenService"):Create(
 			guiInput.Close.btn,
@@ -1505,23 +1505,23 @@ local script = G2L["67"];
 				BackgroundTransparency = 1
 			}):Play()
 	end)
-	
+
 	local filterClicked = false
 	local classTypeClicked = false
 	local parentPropretyClicked = false
-	
+
 	-- Filter
-	
+
 	gui.Topbar.Filter.MouseEnter:Connect(function ()
 		if filterClicked then return end
 		gui.Topbar.Filter.FilterFrame.Visible = true
 	end)
-	
+
 	gui.Topbar.Filter.MouseLeave:Connect(function ()
 		if filterClicked then return end
 		gui.Topbar.Filter.FilterFrame.Visible = false
 	end)
-	
+
 	gui.Topbar.Filter.MouseButton1Click:Connect(function ()
 		if not filterClicked then
 			filterClicked = true
@@ -1531,19 +1531,19 @@ local script = G2L["67"];
 			gui.Topbar.Filter.FilterFrame.Visible = true
 		end
 	end)
-	
+
 	-- Class Type
-	
+
 	gui.Topbar.Filter.FilterFrame.ClassType.MouseEnter:Connect(function ()
 		if classTypeClicked then return end
 		gui.Topbar.Filter.FilterFrame.ClassType.ClassTypeFrame.Visible = true
 	end)
-	
+
 	gui.Topbar.Filter.FilterFrame.ClassType.MouseLeave:Connect(function ()
 		if classTypeClicked then return end
 		gui.Topbar.Filter.FilterFrame.ClassType.ClassTypeFrame.Visible = false
 	end)
-	
+
 	gui.Topbar.Filter.FilterFrame.ClassType.MouseEnter:Connect(function ()
 		if not classTypeClicked then
 			classTypeClicked = true
@@ -1553,19 +1553,19 @@ local script = G2L["67"];
 			gui.Topbar.Filter.FilterFrame.ClassType.ClassTypeFrame.Visible = false
 		end
 	end)
-	
+
 	-- Parent Proprety
-	
+
 	gui.Topbar.Filter.FilterFrame.ParentProprety.MouseEnter:Connect(function ()
 		if parentPropretyClicked then return end
 		gui.Topbar.Filter.FilterFrame.ParentProprety.ParentPropretyFrame.Visible = true
 	end)
-	
+
 	gui.Topbar.Filter.FilterFrame.ParentProprety.MouseLeave:Connect(function ()
 		if parentPropretyClicked then return end
 		gui.Topbar.Filter.FilterFrame.ParentProprety.ParentPropretyFrame.Visible = false
 	end)
-	
+
 	gui.Topbar.Filter.FilterFrame.ParentProprety.MouseEnter:Connect(function ()
 		if not parentPropretyClicked then
 			parentPropretyClicked = true
@@ -1575,7 +1575,7 @@ local script = G2L["67"];
 			gui.Topbar.Filter.FilterFrame.ParentProprety.ParentPropretyFrame.Visible = false
 		end
 	end)
-	
+
 	for _, v in gui.Topbar.Filter.FilterFrame.ClassType.ClassTypeFrame:GetChildren() do
 		if v:IsA("TextButton") then
 			v.MouseButton1Click:Connect(function ()
@@ -1584,7 +1584,7 @@ local script = G2L["67"];
 			end)
 		end
 	end
-	
+
 	for _, v in gui.Topbar.Filter.FilterFrame.ParentProprety.ParentPropretyFrame:GetChildren() do
 		if v:IsA("TextButton") then
 			v.MouseButton1Click:Connect(function ()
@@ -1593,7 +1593,7 @@ local script = G2L["67"];
 			end)
 		end
 	end
-	
+
 	game:GetService("Players").LocalPlayer:GetMouse().Button1Down:Connect(function ()
 		if script.Parent.Frame.GuiState == Enum.GuiState.Hover then
 			overlayed = false
@@ -1602,7 +1602,7 @@ local script = G2L["67"];
 			script.Parent.Frame.Top.Close.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 		end
 	end)
-	
+
 	game:GetService("Players").LocalPlayer:GetMouse().Button1Down:Connect(function ()
 		if script.Parent.Frame.GuiState == Enum.GuiState.Idle then
 			overlayed = true
@@ -1611,7 +1611,7 @@ local script = G2L["67"];
 			script.Parent.Frame.Top.Close.BackgroundColor3 = Color3.fromRGB(0, 114, 204)
 		end
 	end)
-	
+
 	refreshFilterData()
 	refresh()
 end;
