@@ -28,7 +28,7 @@ return function (tlt, dcpt)
 	MessageBox_2.BackgroundTransparency = 1.000
 	MessageBox_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
 	MessageBox_2.BorderSizePixel = 0
-	MessageBox_2.Size = UDim2.new(0, 1914, 0, 867)
+	MessageBox_2.Size = UDim2.fromScale(1, 1)
 	MessageBox_2.ZIndex = 999999999
 
 	Frame.Parent = MessageBox_2
