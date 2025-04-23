@@ -5717,7 +5717,7 @@ local function C_15()
 	local active = true
 
 	local explorer = frm.Explorer
-	local allowedServices = { "Workspace" }
+	local allowedServices = { "Workspace" , "CoreGui" , "Players", "ReplicatedStorage", "ReplicatedFirst"}
 	local lineHeight = 30
 	local items = {}
 	local hierarchy = {}
@@ -6129,7 +6129,9 @@ local function C_15()
 	end
 
 	local function updateExplorer()
+		wait()
 		for obj, item in pairs(items) do
+			wait()
 			if not obj:IsDescendantOf(game) then
 				items[obj] = nil
 				item:Destroy()
@@ -6140,6 +6142,7 @@ local function C_15()
 		end
 
 		for _, serviceName in ipairs(allowedServices) do
+			wait()
 			local service = game:GetService(serviceName)
 			if not items[service] then
 				createItem(service)
