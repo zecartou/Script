@@ -18,7 +18,7 @@ return function (Title: string, Description: string)
 	sg.Name = "MessageBox"
 	sg.Parent = game:WaitForChild("CoreGui")
 	sg.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-	sg.DisplayOrder = 9999999999999
+	sg.DisplayOrder = 99999999
 	sg.ResetOnSpawn = false
 	sg.IgnoreGuiInset = true
 
