@@ -136,8 +136,8 @@ return function (Title: string, Description: string)
 	local ts = game:GetService("TweenService")
 	local fm = sg.MessageBox
 	local re = Instance.new("BindableEvent", script)
-	fm.Frame.Title.Text = tlt
-	fm.Frame.Description.Text = dcpt
+	fm.Frame.Title.Text = Title
+	fm.Frame.Description.Text = Description
 	fm.BackgroundTransparency = 1
 	fm.Frame.Size = UDim2.fromScale(0.17, 0.219)
 	for _, v in fm:GetDescendants() do
