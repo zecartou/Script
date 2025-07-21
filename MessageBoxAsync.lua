@@ -1,4 +1,4 @@
-return function (tlt, dcpt)
+return function (Title: string, Description: string)
 	local sg = Instance.new("ScreenGui")
 	local MessageBox_2 = Instance.new("Frame")
 	local Frame = Instance.new("Frame")
@@ -16,7 +16,7 @@ return function (tlt, dcpt)
 	local UIStroke_2 = Instance.new("UIStroke")
 
 	sg.Name = "MessageBox"
-	sg.Parent = game.Players.LocalPlayer:WaitForChild("CoreGui")
+	sg.Parent = game:WaitForChild("CoreGui")
 	sg.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 	sg.DisplayOrder = 9999999999999
 	sg.ResetOnSpawn = false
