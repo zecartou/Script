@@ -1,4 +1,6 @@
-return function (Title: string, Description: string)
+local MessageBox = {}
+
+function MessageBox:Async (Title: string, Description: string)
 	local sg = Instance.new("ScreenGui")
 	local MessageBox_2 = Instance.new("Frame")
 	local Frame = Instance.new("Frame")
@@ -274,3 +276,5 @@ return function (Title: string, Description: string)
 	end
 	return re
 end
+
+return MessageBox
