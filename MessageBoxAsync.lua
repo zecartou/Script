@@ -1,6 +1,6 @@
 local MessageBox = {}
 
-function MessageBox:Async (Title: string, Description: string)
+function MessageBox:Async (TitleText: string, DescriptionText: string)
 	local sg = Instance.new("ScreenGui")
 	local MessageBox_2 = Instance.new("Frame")
 	local Frame = Instance.new("Frame")
@@ -138,8 +138,8 @@ function MessageBox:Async (Title: string, Description: string)
 	local ts = game:GetService("TweenService")
 	local fm = sg.MessageBox
 	local re = Instance.new("BindableEvent", script)
-	fm.Frame.Title.Text = Title
-	fm.Frame.Description.Text = Description
+	fm.Frame.Title.Text = TitleText
+	fm.Frame.Description.Text = DescriptionText
 	fm.BackgroundTransparency = 1
 	fm.Frame.Size = UDim2.fromScale(0.17, 0.219)
 	for _, v in fm:GetDescendants() do
